@@ -1,6 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
 .navbar {
-  color: rgb(79, 190, 230);
+  color: darkblue;
+  font-family: "Architects Daughter", sans-serif;
 }
 
 body {
@@ -15,4 +19,19 @@ body {
   padding-top: 50px;
   padding-left: 150px;
   font-size: 50pt;
+}
+
+.colour-pick-text {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.main-image-container {
+  padding-top: 0;
+  width: 75%;
+  height: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
