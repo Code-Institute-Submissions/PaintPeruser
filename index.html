@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>PaintPeruser</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -29,6 +30,18 @@
       <div class="container-fluid main-image-container">
         <img src="../assets/images/sofa-red.jpg">
       </div>
+      <div class="colour-dropbox text-center">
+        <form method="post" target="_blank">
+            <select class="custom-select custom-select-sm" id="dropdown" name="choose-colour" required aria-label="choose-colour">
+              <option selected disabled value="">Choose a colour</option>
+              <option value="Blaze-Red">Blaze Red</option>
+              <option value="Azure-Blue">Azure Blue</option>
+              <option value="Jewel Green">Jewel Green</option>
+              <option value="Passion Purple">Passion Purple</option>
+              <option value="Sunshine Yellow">Sunshine Yellow</option>
+            </select>
+            <button class="btn btn-success" type="submit">Show me!</button>
+          </form>
     </section>
     <script src="script.js"></script>
   </body>

@@ -29,9 +29,29 @@ body {
 .main-image-container {
   padding-top: 0;
   width: 75%;
-  height: 70vw;
+  height: 60vw;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.colour-dropbox {
+  width: 25%;
+  margin: 0 auto;
+}
+
+
+/*---------------------------------------------------- Colours */
+
+.azure-blue {
+  filter: hue-rotate(280deg);
+}
+
+.passion-purple {
+  filter: hue-rotate(320deg);
+}
+
+.blaze-red {
+  filter: hue-rotate(0deg);
 }
