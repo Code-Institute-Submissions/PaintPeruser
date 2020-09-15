@@ -1,0 +1,18 @@
+
+.navbar {
+  color: rgb(79, 190, 230);
+}
+
+body {
+  background-image: url("../images/white-paint.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  background-position: center;
+}
+
+.main-text {
+  padding-top: 50px;
+  padding-left: 150px;
+  font-size: 50pt;
+}
