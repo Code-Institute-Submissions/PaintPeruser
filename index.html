@@ -28,21 +28,21 @@
         <h3 class="colour-pick-text">Pick your colour</h3>
       </div>
       <div class="container-fluid main-image-container">
-        <img src="../assets/images/sofa-red.jpg">
+        <img id="main-image" src="../assets/images/sofa-red.jpg">
       </div>
       <div class="colour-dropbox text-center">
         <form method="post" target="_blank">
             <select class="custom-select custom-select-sm" id="dropdown" name="choose-colour" required aria-label="choose-colour">
               <option selected disabled value="">Choose a colour</option>
-              <option value="Blaze-Red">Blaze Red</option>
-              <option value="Azure-Blue">Azure Blue</option>
-              <option value="Jewel Green">Jewel Green</option>
-              <option value="Passion Purple">Passion Purple</option>
+              <option id="blaze-red" value="blaze-red">Blaze Red</option>
+              <option id="azure-blue" value="azure-blue">Azure Blue</option>
+              <option id="jewel-green" value="Jewel Green">Jewel Green</option>
+              <option id="passion-purple" value="Passion Purple">Passion Purple</option>
               <option value="Sunshine Yellow">Sunshine Yellow</option>
             </select>
             <button class="btn btn-success" type="submit">Show me!</button>
           </form>
     </section>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
   </body>
 </html>

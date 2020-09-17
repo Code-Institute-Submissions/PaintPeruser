@@ -45,13 +45,17 @@ body {
 /*---------------------------------------------------- Colours */
 
 .azure-blue {
-  filter: hue-rotate(280deg);
+  filter: hue-rotate(320deg);
 }
 
 .passion-purple {
-  filter: hue-rotate(320deg);
+  filter: hue-rotate(280deg);
 }
 
 .blaze-red {
   filter: hue-rotate(0deg);
+}
+
+.jewel-green {
+  filter: hue-rotate(120deg);
 }

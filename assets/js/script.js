@@ -2,7 +2,7 @@
   $("select option:selected").each
 }) */
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 
   var $doc = $(this);
   var azure_blue = $doc.find(".azure-blue");
@@ -11,10 +11,22 @@ $(document).ready(function() {
 
   $("#dropdown").change(function() {
     var target = $(this).val();
-    if (target == "blaze_red") blaze_red.css();
-    if (target == "azure_blue") azure_blue.css();
-    if (target == "passion_purple") passion_purple.css();
+    if (target == "blaze-red") .addClass("blaze-red");
+    if (target == "azure-blue") .addClass("azure-blue");
+    if (target == "passion_purple").addClass("passion-purple");
 
   });
 });
+*/
 
+$(document).ready(function() {
+    $("#azure-blue").click(function(){
+        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").addClass("azure-blue");
+    });
+    $("#jewel-green").click(function(){
+        $("#main-image").removeClass("azure-blue").removeClass("passion-purple").addClass("jewel-green");
+    });
+    $("#passion-purple").click(function(){
+        $("#main-image").removeClass("jewel-green").removeClass("azure-blue").addClass("passion-purple");
+    });
+});
