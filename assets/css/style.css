@@ -45,7 +45,7 @@ body {
 /*---------------------------------------------------- Colours */
 
 .azure-blue {
-  filter: hue-rotate(320deg);
+  filter: hue-rotate(180deg);
 }
 
 .passion-purple {
@@ -59,3 +59,16 @@ body {
 .jewel-green {
   filter: hue-rotate(120deg);
 }
+
+.vivid-pink {
+  filter: hue-rotate(320deg);
+}
+
+.sunburnt-orange {
+  filter: hue-rotate(20deg);
+}
+
+.calming-teal {
+  filter: hue-rotate(150deg);
+}
+
