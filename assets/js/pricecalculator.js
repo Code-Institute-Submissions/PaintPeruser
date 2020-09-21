@@ -30,6 +30,12 @@ function calculatePrice() {
   $("#priceBox").val(price);
 }
 
+function generateID() {
+  var id = Date.now()
+  $("#quoteBox").val(id);
+}
+
+
 
 /*
 function calculatePrice() {
@@ -46,5 +52,6 @@ https://stackoverflow.com/questions/13418963/jquery-onchange-function-not-trigge
 
 $("#dropdown-calculator, #square-feet").on('change', function() {
   calculatePrice();
+  generateID();
 });
 
