@@ -26,7 +26,7 @@ function getColour() {
 function calculatePrice() {
   getColour();
   var sqFeet = $("#square-feet").val();
-  var price = "£" + (basePrice + (sqFeet * colourIndex));
+  var price = "£" + Math.floor((basePrice + (sqFeet * colourIndex)));
   $("#priceBox").val(price);
 }
 
