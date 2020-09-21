@@ -42,3 +42,11 @@ $(document).ready(function() {
         $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("blaze-red").removeClass("vivid-pink").addClass("sunburnt-orange");
     });
 });
+
+/* Experiment with if statements to remove the classes
+
+https://forum.jquery.com/topic/combination-of-addclass-hasclass-and-removeclass
+
+Perhaps toggleClass
+
+https://api.jquery.com/toggleclass/ */

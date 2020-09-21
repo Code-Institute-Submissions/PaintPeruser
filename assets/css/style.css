@@ -41,6 +41,16 @@ body {
   margin: 0 auto;
 }
 
+.form-container {
+  width: 75%;
+  margin: 0 auto;
+  /*border: solid #676767 2px; */
+}
+
+#email-form {
+  padding: 20px;
+}
+
 
 /*---------------------------------------------------- Colours */
 
