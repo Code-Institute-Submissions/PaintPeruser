@@ -73,15 +73,24 @@
         <div class="form-row">
           <div class="form-group col-md-3">
             <label for="inputAddress">Colour Choice</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <select class="custom-select" id="dropdown-calculator" name="choose-colour" required aria-label="choose-colour">
+              <option selected disabled value="">Choose a colour</option>
+              <option id="blaze-red" value="1.0">Blaze Red</option>
+              <option id="azure-blue" value="1.0">Azure Blue</option>
+              <option id="jewel-green" value="1.1">Jewel Green</option>
+              <option id="passion-purple" value="1.3">Passion Purple</option>
+              <option id="vivid-pink" value="1.3">Vivid Pink</option>
+              <option id="sunburnt-orange" value="1.2">Sunburnt Orange</option>
+              <option id="calming-teal" value="1.25">Calming Teal</option>
+            </select>
           </div>
           <div class="form-group col-md-3">
             <label for="inputAddress2">Square Footage Required</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Square Feet">
+            <input type="text" class="form-control" id="square-feet" placeholder="Square Feet">
           </div>
           <div class="form-group col-md-3">
             <label for="inputAddress2">Price</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Price">
+            <input type="text" class="form-control" id="priceBox" placeholder="Price">
           </div>
           <div class="form-group col-md-3">
             <label for="inputAddress2">Quote Number</label>
@@ -101,6 +110,7 @@
     </div>
     </section>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/pricecalculator.js"></script>
      <script src="../assets/js/emailer.js"></script>
   </body>
 </html>
