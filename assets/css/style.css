@@ -19,6 +19,14 @@ body {
   padding-top: 50px;
   padding-left: 150px;
   font-size: 50pt;
+  font-family: "Architects Daughter", sans-serif;
+  padding-bottom: 70px;
+  color: darkblue;
+}
+
+.about-container {
+  border: solid 1px black;
+  border-radius: 3px;
 }
 
 .colour-pick-text {
@@ -44,11 +52,20 @@ body {
 .form-container {
   width: 75%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 #email-form {
   padding: 20px;
+}
+
+/*---------------------------------------------------- Icons */
+
+i {
+  font-size: 40pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rebeccapurple;
 }
 
 
