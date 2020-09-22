@@ -31,6 +31,7 @@
     <div>
       <h2 class="main-text"> Visualise <br> your <br> space!</h2>
     </div>
+    
     <section>
       <div>
         <h3 class="colour-pick-text">Pick your colour</h3>
@@ -98,19 +99,30 @@
           </div>
         </div>
         <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Save this for next time!
-            </label>
+          <div>
+            <button onclick="saveDetails()" type="button" class="btn btn-success">Save these details</button>
+            
           </div>
   </div>
   <button type="submit" class="btn btn-primary">Send Quote</button>
 </form>
     </div>
     </section>
+
+  <footer>
+  <div class="copyright">
+    <p>&copy 2020 - PaintPeruser</p>
+  </div>
+  <div class="social">
+    <a href="#" class="support">Contact Us</a>
+    <a href="#" class="face">f</a>
+    <a href="#" class="tweet">t</a>
+    <a href="#" class="linked">in</a>
+  </div>
+  </footer>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/pricecalculator.js"></script>
      <script src="../assets/js/emailer.js"></script>
+     <script src="../assets/js/savedetails.js"></script>
   </body>
 </html>

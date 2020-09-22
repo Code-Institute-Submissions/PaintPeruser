@@ -26,3 +26,32 @@ Once their selection has been made, the site will allow them to email over a quo
 - Their previous choices presented to them will make the experience easier.
 - A price will be required for their consideration
 - An emailed quote will allow them to continue the process as they likely did before.
+
+
+
+
+
+## Attributation
+
+ Site background image: 
+https://www.pexels.com/photo/white-paint-on-wall-3616733/
+
+Main sofa image by CAMACHO03: https://pixabay.com/photos/sofa-orange-cushion-furniture-5213406/
+
+- Footer details adopted from 'Another simple footer' by toama:
+https://codepen.io/toamaenepitin/pen/gObvrxd
+
+
+- JQuery assistance from StackOverflow:
+https://stackoverflow.com/questions/12631746/change-css-based-on-drop-down-selections-value-using-jquery
+
+https://stackoverflow.com/questions/10412103/populate-form-with-localstorage
+
+- Assistance with price calculations: 
+
+https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
+
+- Assistance with Date.now to generate unique IDs: https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13
+
+- Assistance with the CSS filter used to generate the image colours: https://css-tricks.com/almanac/properties/f/filter/
+

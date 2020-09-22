@@ -31,9 +31,14 @@ function calculatePrice() {
 }
 
 function generateID() {
-  var id = Date.now()
-  $("#quoteBox").val(id);
-}
+  if ($("#quoteBox").val() == "") {
+    var id = Date.now()
+    $("#quoteBox").val(id);
+  };
+};
+
+/* Do we need to generate a new ID when the quote is sent?
+Maybe once the email is sent, the local storage for the quote ID is removed? That however would remove their saved details... Maybe leave the quote switching all the time and we only save the ones that are emailed through?? */
 
 
 
