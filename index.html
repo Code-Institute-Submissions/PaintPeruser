@@ -19,14 +19,14 @@
   </head>
   <body>
     <header>
-      <nav id="mainmenu" class="navbar-transparent navbar-expand-lg navbar">
+      <nav id="mainmenu" class= "navbar-expand-lg navbar fixed-top">
       <a id="brand" class="navbar-brand" href="#">PaintPeruser</a>
   <!-- Button for toggling the visibility of the menu -->
   <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
-    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#676767; font-size:28px;"></i></span>
+    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
   </button>
   <!-- Navigation menu container -->
-  <div class="navbar-collapse collapse" id="collapseNavbar">
+  <div class="navbar-collapse collapse " id="collapseNavbar" >
     <!-- Navigation links -->
     <ul class="navbar-nav ml-auto" id="menu">
       <li>
@@ -42,6 +42,7 @@
   </div> 
 </nav>
     </header>
+    <div class="container-push"id="push">
     <div>
       <h2 class="main-text"> Visualise <br> your <br> space!</h2>
     </div>
@@ -49,17 +50,17 @@
     <div class="container about-container text-center">
       <div class="row">
         <div class="col-md-4">
-          <i class="fas fa-palette"></i>
+          <i class="details-icon fas fa-palette"></i>
           <p>Find the colour that you like</p>
           <p>We offer the below bespoke colours in bulk to reduce your decorating costs</p>
         </div>
         <div class="col-md-4">
-          <i class="fas fa-envelope"></i>
+          <i class="details-icon fas fa-envelope"></i>
           <p>Fill in your details, measure your square footage and get a price</p>
           <p>You can even email the completed quote over to yourself. This has on the next steps you can take if you want to proceed.</p>
         </div>
         <div class="col-md-4">
-          <i class="fas fa-mobile"></i>
+          <i class="details-icon fas fa-mobile"></i>
           <p>Drop us a call or an email and our friendly team of representatives will help.</p>
           <p>They check your choices, sort your payment and confirm the exact date when our courier will have your choice at your door.</p>
         </div>
@@ -124,7 +125,7 @@
           </div>
           <div class="form-group col-md-3">
             <label for="inputAddress2">Square Footage Required</label>
-            <input name="square_feet" type="text" class="form-control" id="square-feet" placeholder="Square Feet">
+            <input name="square_feet" type="text" class="form-control" id="square-feet" placeholder="Square Feet" required>
           </div>
           <div class="form-group col-md-3">
             <label for="inputAddress2">Price</label>
@@ -157,7 +158,9 @@
     <a href="#" class="linked">in</a>
   </div>
   </footer>
+  </div>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/scroller.js"></script>
     <script src="../assets/js/pricecalculator.js"></script>
      <script src="../assets/js/emailer.js"></script>
      <script src="../assets/js/savedetails.js"></script>

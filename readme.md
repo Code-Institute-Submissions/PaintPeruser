@@ -55,3 +55,6 @@ https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
 
 - Assistance with the CSS filter used to generate the image colours: https://css-tricks.com/almanac/properties/f/filter/
 
+- Assistance with scrolling behaviour: https://stackoverflow.com/questions/45599455/change-logo-on-scroll-bootstrap-3
+
+- Assistance with pushing content out of the way of the dropdown: https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
