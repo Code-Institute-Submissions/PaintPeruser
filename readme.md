@@ -34,7 +34,7 @@ Once their selection has been made, the site will allow them to email over a quo
 ## Attributation
 
  Site background image: 
-https://www.pexels.com/photo/white-paint-on-wall-3616733/
+https://www.pexels.com/photo/grey-abstract-wallpaper-3137052/
 
 Main sofa image by CAMACHO03: https://pixabay.com/photos/sofa-orange-cushion-furniture-5213406/
 

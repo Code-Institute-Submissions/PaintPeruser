@@ -9,7 +9,7 @@
 }
 
 .translucent-nav {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(212, 235, 242, 0.75);
 }
 
 .navbar-brand {
@@ -19,7 +19,7 @@
 }
 
 body {
-  background-image: url("../images/white-paint-small.jpg");
+  background-image: url("../images/hex.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cccccc;
@@ -242,19 +242,19 @@ footer p {
 
 
 .linked {
-  background-color: blue;
+  background-color: #2867b2;
   font-size: inherit;
   width: 20%;
 }
 
 .face {
-  background-color: lightblue;
+  background-color: #3b5998;
   font-size: inherit;
   width: 20%;
 }
 
 .tweet {
-  background-color: blueviolet;
+  background-color: #1da1f2;
   font-size: inherit;
   width: 20%;
   
