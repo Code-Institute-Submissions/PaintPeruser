@@ -7,12 +7,45 @@
   font-family: "Architects Daughter", sans-serif;
 }
 
+.navbar-brand {
+  font-size: 35pt;
+  text-decoration: none;
+  color: darkblue;
+}
+
 body {
   background-image: url("../images/white-paint.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cccccc;
   background-position: center;
+}
+
+#menu {
+font-size: 110%;
+list-style-type: none;
+letter-spacing: 4px; 
+
+}
+
+ .nav-link{
+    text-align: right;
+}
+
+/* floating the list items here to ensure that they are appropriately ordered with the menu itself being floated right. This can flip the elements. */
+#menu li {
+  margin-right: 30px;
+  float: left;
+  color: darkblue;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu a:hover {
+  border-bottom: 1px solid #777777;
 }
 
 .main-text {
@@ -47,6 +80,7 @@ body {
 .colour-dropbox {
   width: 25%;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 .form-container {
@@ -99,6 +133,27 @@ i {
   filter: hue-rotate(150deg);
 }
 
+/* ---------------------------------------------------Dividers */
+
+.block-divider {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  width: 20%;
+  background-color: #777777;
+}
+
+.block-divider-white {
+  background-color: #fff;
+}
+
+.block-divider-bottom-margin {
+  margin-bottom: 20px;
+}
+
 /* -------------------------------------------------- footer */
 
 
@@ -122,6 +177,8 @@ footer {
   margin-top: 2em 0;
   height: 70px;
   background-color: #696969;
+  position: absolute;
+  
 }
 .copyright {
     width: 50%;
@@ -189,4 +246,11 @@ footer p {
   background-color: green;
   font-size: 0.8em;
   width: 40%;
+}
+
+
+@media screen and (max-width: 990px) {
+ #menu a:hover {
+  border-bottom: none;
+  }
 }
