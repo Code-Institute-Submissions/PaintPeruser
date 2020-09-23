@@ -1,27 +1,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
 .navbar {
-  color: darkblue;
+  color: midnightblue;
   font-family: "Architects Daughter", sans-serif;
-  background: rgba(255, 255, 255, 0.5);
+}
 
+.translucent-nav {
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .navbar-brand {
   font-size: 35pt;
   text-decoration: none;
-  color: darkblue;
+  color: midnightblue;
 }
 
 body {
-  background-image: url("../images/white-paint.jpg");
+  background-image: url("../images/white-paint-small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cccccc;
   background-position: center;
   padding-top: 50px;
+  font-family: 'Lato', sans-serif;
 }
 
 #menu {
@@ -39,7 +43,7 @@ letter-spacing: 4px;
 #menu li {
   margin-right: 30px;
   float: left;
-  color: darkblue;
+  color: midnightblue;
   
 }
 
@@ -49,7 +53,7 @@ letter-spacing: 4px;
 }
 
 #menu a:hover {
-  border-bottom: 1px solid #777777;
+  color: blueviolet;
 }
 
 .main-text {
@@ -58,7 +62,7 @@ letter-spacing: 4px;
   font-size: 50pt;
   font-family: "Architects Daughter", sans-serif;
   padding-bottom: 70px;
-  color: darkblue;
+  color: midnightblue;
 }
 
 .about-container {
@@ -104,7 +108,7 @@ letter-spacing: 4px;
   font-size: 40pt;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: rebeccapurple;
+  color: midnightblue;
 }
 
 .navbar-toggler-icon {
@@ -168,7 +172,7 @@ letter-spacing: 4px;
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+
 
 /* Colors */
 
@@ -272,9 +276,6 @@ pushUp{
 
 
 @media screen and (max-width: 990px) {
- #menu a:hover {
-  border-bottom: none;
-  }
   .navbar-toggler-icon  {
     font-size: 18px;
   }
