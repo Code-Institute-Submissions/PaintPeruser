@@ -254,3 +254,10 @@ footer p {
   border-bottom: none;
   }
 }
+
+@media screen and (max-width: 700px) {
+ .main-image-container {
+  width: 90%;
+  height: 60vw;
+  }
+}

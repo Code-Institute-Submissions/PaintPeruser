@@ -21,6 +21,21 @@ function saveDetails() {
   alert("Your choices have been saved.");
 }
 
+function resetDetails() {
+  localStorage.clear();
+
+  $("#fname").val("");
+  $("#lname").val("");
+  $("#emailaddress").val("");
+  $("#dropdown-calculator").val("");
+  $("#square-feet").val("");
+  $("#priceBox").val("");
+  $("#quoteBox").val("");
+
+  console.log("Local Storage Cleared");
+  alert("Your details have been reset.");
+}
+
 $(document).ready(function() {
   var firstname = localStorage.getItem("firstname");
   var lastname = localStorage.getItem("lastname"); 
