@@ -57,8 +57,8 @@ letter-spacing: 4px;
 }
 
 .main-text {
-  padding-top: 50px;
-  padding-left: 150px;
+  padding-top: 100px;
+  /*padding-left: 150px; */
   font-size: 50pt;
   font-family: "Architects Daughter", sans-serif;
   padding-bottom: 70px;
@@ -73,7 +73,7 @@ letter-spacing: 4px;
 
 .colour-pick-text {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .main-image-container {
@@ -145,6 +145,10 @@ letter-spacing: 4px;
 
 .calming-teal {
   filter: hue-rotate(150deg);
+}
+
+.default-hue {
+  filter: grayscale(100%);
 }
 
 /* ---------------------------------------------------Dividers */

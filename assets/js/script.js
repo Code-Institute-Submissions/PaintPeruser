@@ -21,27 +21,28 @@
 
 $(document).ready(function() {
     $("#blaze-red").click(function(){
-        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").addClass("blaze-red");
+        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").removeClass("default-hue").addClass("blaze-red");
     });
     $("#azure-blue").click(function(){
-        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("blaze-red").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").addClass("azure-blue");
+        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("blaze-red").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").removeClass("default-hue").addClass("azure-blue");
     });
     $("#jewel-green").click(function(){
-        $("#main-image").removeClass("passion-purple").removeClass("blaze-red").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").addClass("jewel-green");
+        $("#main-image").removeClass("passion-purple").removeClass("blaze-red").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").removeClass("default-hue").addClass("jewel-green");
     });
     $("#passion-purple").click(function(){
-        $("#main-image").removeClass("blaze-red").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").addClass("passion-purple");
+        $("#main-image").removeClass("blaze-red").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("vivid-pink").removeClass("default-hue").addClass("passion-purple");
     });
     $("#vivid-pink").click(function(){
-        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("blaze-red").addClass("vivid-pink");
+        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("sunburnt-orange").removeClass("blaze-red").removeClass("default-hue").addClass("vivid-pink");
     });
     $("#calming-teal").click(function(){
-        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("blaze-red").removeClass("sunburnt-orange").removeClass("vivid-pink").addClass("calming-teal");
+        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("blaze-red").removeClass("sunburnt-orange").removeClass("vivid-pink").removeClass("default-hue").addClass("calming-teal");
     });
     $("#sunburnt-orange").click(function(){
-        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("blaze-red").removeClass("vivid-pink").addClass("sunburnt-orange");
+        $("#main-image").removeClass("passion-purple").removeClass("jewel-green").removeClass("azure-blue").removeClass("calming-teal").removeClass("blaze-red").removeClass("vivid-pink").removeClass("default-hue").addClass("sunburnt-orange");
     });
 });
+
 
 /* Experiment with if statements to remove the classes
 

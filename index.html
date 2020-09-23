@@ -43,9 +43,23 @@
 </nav>
     </header>
     <div class="container-push"id="push">
-    <div>
-      <h2 class="main-text"> Visualise <br> your <br> space!</h2>
+    <div class="main-text text-center">
+      <div class="row">
+        <div class="col-md-4">
+          <p>Visualise</p>
+        </div>
+        <div class="col-md-4">
+          <p>Your</p>
+          
+        </div>
+        <div class="col-md-4">
+          <p>Space</p>
+        </div>
+      </div>
     </div>
+    <div>
+        <h3 class="colour-pick-text">How it works</h3>
+      </div>
     <hr class="block-divider block-divider-bottom-margin">
     <div class="container about-container text-center">
       <div class="row">
@@ -72,19 +86,19 @@
       </div>
       <hr class="block-divider">
       <div class="container-fluid main-image-container">
-        <img id="main-image" src="../assets/images/sofa-red.jpg">
+        <img id="main-image" class="default-hue" src="../assets/images/sofa-red.jpg">
       </div>
       <div class="colour-dropbox text-center">
         <form method="post" target="_blank">
             <select class="custom-select custom-select-sm" id="dropdown" name="choose_colour" required aria-label="choose-colour">
-              <option selected disabled value="">Choose a colour</option>
-              <option id="blaze-red" value="blaze-red">Blaze Red</option>
-              <option id="azure-blue" value="azure-blue">Azure Blue</option>
+              <option selected disabled id="choose-default" value="">Choose a colour</option>
+              <option id="blaze-red" value="Blaze Red">Blaze Red</option>
+              <option id="azure-blue" value="Azure Blue">Azure Blue</option>
               <option id="jewel-green" value="Jewel Green">Jewel Green</option>
               <option id="passion-purple" value="Passion Purple">Passion Purple</option>
-              <option id="vivid-pink" value="vivid-pink">Vivid Pink</option>
-              <option id="sunburnt-orange" value="sunburnt-orange">Sunburnt Orange</option>
-              <option id="calming-teal" value="calming-teal">Calming Teal</option>
+              <option id="vivid-pink" value="Vivid Pink">Vivid Pink</option>
+              <option id="sunburnt-orange" value="Sunburnt Orange">Sunburnt Orange</option>
+              <option id="calming-teal" value="Calming Teal">Calming Teal</option>
             </select>
           </form>
     </section>
@@ -141,18 +155,36 @@
             <button onclick="saveDetails()" type="button" class="btn btn-success">Save these details</button>
             <button onclick="resetDetails()" type="button" class="btn btn-success">Reset these details</button>
           </div>
-  </div>
+        </div>
   <button type="submit" class="btn btn-primary">Send Quote</button>
 </form>
     </div>
     </section>
+  <div class="modal" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contact Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <footer>
   <div class="copyright">
     <p>&copy 2020 - PaintPeruser</p>
   </div>
   <div class="social">
-    <a href="#" class="support">Contact Us</a>
+    <a data-toggle="modal" data-target="#myModal" href="#myModal" class="support">Contact Us</a>
     <a href="#" class="face">f</a>
     <a href="#" class="tweet">t</a>
     <a href="#" class="linked">in</a>
