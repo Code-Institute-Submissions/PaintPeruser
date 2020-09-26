@@ -11,6 +11,8 @@ Once their selection has been made, the site will allow them to email over a quo
 
 ## User Stories
 
+These will be brief touchpoints of what the user is looking for from this site. The full walkthrough is later in the readme of the entire completed journey.
+
 ### User A - New Customer
 - A new customer has navigated to the website to look at paint.
 - They will want to select from multiple colours.
@@ -26,6 +28,26 @@ Once their selection has been made, the site will allow them to email over a quo
 - Their previous choices presented to them will make the experience easier.
 - A price will be required for their consideration
 - An emailed quote will allow them to continue the process as they likely did before.
+
+## Site Layout
+
+It was decided that a one page layout was the most streamlined way to allow the customer to experience their journey.
+
+The brand is prominent at the top of the homepage, along with navigation should their know where they wish to go. This navigation will follow them down the page for ease.
+
+The subtitle is presented next drawing them down into an explanation how the process works.
+
+Their call to action 'Pick your colour' leads them to a dropdown where they are able to affect the colour choices of the photograph, finding their preferred colour.
+
+They are then able to add their details in order to get a price quote for their colour at their preferred quantity. This is calculated on the fly but the email has details on how they can proceed with their order.
+
+The option is also presented for their details to remain in their browser storage for ease of coming back to, or for future reference/orders. This can be cleared with the second 'reset' button.
+
+Finally there are contact details (which are presented in a closable modal window) and social media links for the customers persual.
+
+## Design Decisions
+
+
 
 
 
