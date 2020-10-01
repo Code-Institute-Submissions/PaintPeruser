@@ -139,6 +139,34 @@ letter-spacing: 4px;
   text-align: center;
 }
 
+#blaze-red-btn {
+  background-color: #E6673A;
+}
+
+#azure-blue-btn {
+  background-color: #1396C0;
+}
+
+#jewel-green-btn {
+  background-color: #14A84A;
+}
+
+#passion-purple-btn {
+  background-color: #D45EDA;
+}
+
+#vivid-pink-btn {
+  background-color: #FD5D92;
+}
+
+#sunburnt-orange-btn {
+  background-color: #CB751F;
+}
+
+#calming-teal-btn {
+  background-color: #03A488;
+}
+
 
 /*---------------------------------------------------- Colours */
 
