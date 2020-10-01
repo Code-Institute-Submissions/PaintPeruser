@@ -33,7 +33,7 @@
             <a class="nav-link" href="index.html">Intro</a>
         </li>
         <li>
-            <a class="nav-link" href="index.html#main-image">Colours</a>
+            <a class="nav-link" href="index.html#colour-buttons">Colours</a>
         </li>
         <li>
             <a class="nav-link" href="index.html#email-form">Quote Me</a>
@@ -42,21 +42,9 @@
   </div> 
 </nav>
     </header>
-    <div class="container-push"id="push">
     <div class="main-text text-center">
-      <div class="row">
-        <div class="col-md-4">
-          <p>Visualise</p>
-        </div>
-        <div class="col-md-4">
-          <p>Your</p>
-          
-        </div>
-        <div class="col-md-4">
-          <p>Space</p>
-        </div>
+      <div> Visualise Your Space</div>
       </div>
-    </div>
     <div>
         <h3 class="colour-pick-text">How it works</h3>
       </div>
@@ -86,7 +74,7 @@
       </div>
       <hr class="block-divider">
       <div class="col-md-12 text-center">
-        <div class="btn-group btn-group-sm colour-buttons" role="group" aria-label="Basic example">
+        <div class="btn-group btn-group-sm colour-buttons" id="colour-buttons" role="group" aria-label="Basic example">
           <button type="button" id="blaze-red-btn" class="btn btn-secondary">Blaze Red</button>
           <button type="button" id="azure-blue-btn" class="btn btn-secondary">Azure Blue</button>
           <button type="button" id="jewel-green-btn" class="btn btn-secondary">Jewel Green</button>
@@ -97,10 +85,10 @@
         </div>
       </div>
       <div class="container-fluid main-image-container">
-        <img id="main-image" class="default-hue main-image" src="../assets/images/sofa-red.jpg">
+        <img id="main-image" class="default-hue" src="../assets/images/sofa-red.jpg">
         <img class="main-image-overlay" src="../assets/images/sofa-red-overlay.png">
       </div>
-      <div class="colour-dropbox text-center">
+      <!-- <div class="colour-dropbox text-center">
         <form method="post" target="_blank">
             <select class="custom-select custom-select-sm" id="dropdown" name="choose_colour" required aria-label="choose-colour">
               <option selected disabled id="choose-default" value="">Choose a colour</option>
@@ -112,7 +100,10 @@
               <option id="sunburnt-orange" value="Sunburnt Orange">Sunburnt Orange</option>
               <option id="calming-teal" value="Calming Teal">Calming Teal</option>
             </select>
-          </form>
+          </form> -->
+      <div class="text-center">
+        <button type="button" id="pick-me-btn" class="btn btn-secondary">Choose this colour</button>
+      </div>
     </section>
     <div>
         <h3 class="colour-pick-text">Get your quote.</h3>
@@ -203,7 +194,6 @@
     <a href="www.linkedin.com" class="linked">in</a>
   </div>
   </footer>
-  </div>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/scroller.js"></script>
     <script src="../assets/js/pricecalculator.js"></script>

@@ -86,7 +86,7 @@ letter-spacing: 4px;
   position: relative;
 }
 
-.main-image {
+#main-image {
   z-index: 1;
   display: block;
   width: 100%;
