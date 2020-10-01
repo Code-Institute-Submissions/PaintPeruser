@@ -43,6 +43,30 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $("#blaze-red-btn").click(function(){
+        $("#main-image").removeClass("passion-purple jewel-green azure-blue calming-teal sunburnt-orange vivid-pink default-hue").addClass("blaze-red");
+    });
+    $("#azure-blue-btn").click(function(){
+        $("#main-image").removeClass("passion-purple jewel-green blaze-red calming-teal sunburnt-orange vivid-pink default-hue").addClass("azure-blue");
+    });
+    $("#jewel-green-btn").click(function(){
+        $("#main-image").removeClass("passion-purple blaze-red azure-blue calming-teal sunburnt-orange vivid-pink default-hue").addClass("jewel-green");
+    });
+    $("#passion-purple-btn").click(function(){
+        $("#main-image").removeClass("blaze-red jewel-green azure-blue calming-teal sunburnt-orange vivid-pink default-hue").addClass("passion-purple");
+    });
+    $("#vivid-pink-btn").click(function(){
+        $("#main-image").removeClass("passion-purple jewel-green azure-blue calming-teal sunburnt-orange blaze-red default-hue").addClass("vivid-pink");
+    });
+    $("#calming-teal-btn").click(function(){
+        $("#main-image").removeClass("passion-purple jewel-green azure-blue blaze-red sunburnt-orange vivid-pink default-hue").addClass("calming-teal");
+    });
+    $("#sunburnt-orange-btn").click(function(){
+        $("#main-image").removeClass("passion-purple jewel-green azure-blue calming-teal blaze-red vivid-pink default-hue").addClass("sunburnt-orange");
+    });
+});
+
 
 /* Experiment with if statements to remove the classes
 

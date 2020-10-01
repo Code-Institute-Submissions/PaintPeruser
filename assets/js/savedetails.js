@@ -22,19 +22,23 @@ function saveDetails() {
 }
 
 function resetDetails() {
-  localStorage.clear();
+  var response;
+  var confirmation = confirm("Are you sure? All details will be lost.");
+  if (confirmation == true) {
+    localStorage.clear();
 
-  $("#fname").val("");
-  $("#lname").val("");
-  $("#emailaddress").val("");
-  $("#dropdown-calculator").val("");
-  $("#square-feet").val("");
-  $("#priceBox").val("");
-  $("#quoteBox").val("");
+    $("#fname").val("");
+    $("#lname").val("");
+    $("#emailaddress").val("");
+    $("#dropdown-calculator").val("");
+    $("#square-feet").val("");
+    $("#priceBox").val("");
+    $("#quoteBox").val("");
 
-  console.log("Local Storage Cleared");
-  alert("Your details have been reset.");
-}
+    console.log("Local Storage Cleared");
+    alert("Your details have been reset.");
+  };
+};
 
 $(document).ready(function() {
   var firstname = localStorage.getItem("firstname");
