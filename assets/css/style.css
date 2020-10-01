@@ -86,6 +86,23 @@ letter-spacing: 4px;
   position: relative;
 }
 
+.main-image {
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-image-overlay {
+  z-index: 999;
+  position: absolute;
+  bottom: inherit;
+  width: 97.5%;
+  height: auto;
+  overflow: hidden;
+
+}
+
 .colour-dropbox {
   width: 25%;
   margin: 0 auto;

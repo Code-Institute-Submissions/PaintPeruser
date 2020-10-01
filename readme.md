@@ -49,7 +49,12 @@ Finally there are contact details (which are presented in a closable modal windo
 
 
 
+## Known issues
+Due to the recommendation that the main image was changed - a transparent background over the original image as it changes - a small issue has been generated.
 
+Despite the images being the same exact size, they do not line up perfectly. Through various browser inspector trials, it the overlay image was lined up using a width modifier of 97.5%, which looks great on most displays. On small displays however, the an overhang of the main image persists, which isn't remedied by the overflow css option.
+
+Additional media query options will be investigated to remedy this.
 
 
 
