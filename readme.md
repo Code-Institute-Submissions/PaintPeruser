@@ -70,6 +70,50 @@ Finally a note on the navbar. A fair amount of change went into this as finding 
 As such, javascript was used to allow the transparent nav at the top, but a translucent appearance added on scroll. This allows the nav content to be seen, even if it does flow over the page content. An effort has been made for this not to be the general case however in the site content being restricted in width and the brand minimising to it's first letter on scroll, so both sides of the nav flow either side of the page content.
 
 
+### Wireframes
+
+Desktop
+
+![Desktop-1](https://user-images.githubusercontent.com/61311614/94927775-a4c90e00-04ba-11eb-95f3-20b0d7045179.png)
+
+![Desktop-2](https://user-images.githubusercontent.com/61311614/94927835-ba3e3800-04ba-11eb-982e-9576624ea8ef.png)
+
+![Desktop-3-2](https://user-images.githubusercontent.com/61311614/94928357-7992ee80-04bb-11eb-9f1a-a1603d0a4544.png)
+
+
+
+Mobile
+
+![Mobile-1](https://user-images.githubusercontent.com/61311614/94928005-f1144e00-04ba-11eb-967e-0b7acd2f248d.png)
+
+![Mobile-2](https://user-images.githubusercontent.com/61311614/94928022-f5406b80-04ba-11eb-8bff-4f3ff43961ea.png)
+
+![Mobile-3-2](https://user-images.githubusercontent.com/61311614/94928370-7c8ddf00-04bb-11eb-8fe1-07e557c4f07c.png)
+
+
+### Technologies used
+
+- Repl.it - this was the chosen development platform.
+- Bootstrap for site layout, container code, navbar functions - used throughout for rich content and responsive behaviour.
+- JQuery addon used for rich function searching in order to appropriately target html and css for site functionality.
+- GitHub - utilised for cloud backups and project progression.
+- GitHub Pages - an aspect of github, used to deploy the finalised product.
+- Figma - used to create wireframe ideas of how the website should look and function. Used as an alternative to Balsamiq to get a feel for other programs
+- Replace.bg - utilised to remove the background from the main site image for the colour overlay.
+
+## Deployment Procedure
+- Github pages utilised for deployment - process as follows: 
+- Navigate to https://github.com/WrightDanG/PaintPeruser/ -Settings, scroll down to Github pages -Select the master branch, root directory and click deploy. -Site is hosted at https://wrightdang.github.io/PaintPeruser/
+
+On the first navigation, a 404 error was presented. Manually navigating to https://wrightdang.github.io/PaintPeruser/index.html resolved this and the website remained stable after that.
+
+In addition, on first hosting the main image was non-functional and the javascript was not successfully connected.
+
+ADD FIX HERE!
+
+
+Code was locally viewed and edited via repl.it.
+
 
 
 
