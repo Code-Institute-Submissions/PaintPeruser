@@ -41,17 +41,6 @@ function generateID() {
 Maybe once the email is sent, the local storage for the quote ID is removed? That however would remove their saved details... Maybe leave the quote switching all the time and we only save the ones that are emailed through?? */
 
 
-
-/*
-function calculatePrice() {
-  /*var price = 
-  var colour = $("#dropdown-calculator").val();
-  var sqFeet = $("#square-feet").val();
-  var price = "£" + (basePrice + (sqFeet * colour));
-  $("#priceBox").val(price);
-}
-*/
-
 /* was using .change however the selection was not dynamically updating - attempting to use .on to remedy:
 https://stackoverflow.com/questions/13418963/jquery-onchange-function-not-triggering-for-dynamically-created-inputs */
 

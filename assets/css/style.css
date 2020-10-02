@@ -58,7 +58,6 @@ letter-spacing: 4px;
 
 .main-text {
   padding-top: 100px;
-  /*padding-left: 150px; */
   font-size: 50pt;
   font-family: "Architects Daughter", sans-serif;
   padding-bottom: 70px;
@@ -137,6 +136,7 @@ letter-spacing: 4px;
 
 .colour-buttons {
   text-align: center;
+  padding-top: 15px;
 }
 
 #blaze-red-btn {
@@ -235,7 +235,6 @@ letter-spacing: 4px;
 * {
   margin: 0;
   padding: 0;
-  /*@include box-sizing(border-box); */
 }
 
 
@@ -252,9 +251,6 @@ footer {
 .copyright {
     width: 50%;
     float: left;
-    /*@media (max-width: 600px) {
-      width: 100%; 
-    }*/
 }
 
 footer p {
@@ -265,17 +261,11 @@ footer p {
       text-transform: capitalize;
       letter-spacing: 1px;
       margin-bottom: 0;
-      /*@media (max-width: 600px) {
-        text-align: center;
-        padding: 0; } */
 }
 
 .social {
       width: 50%;
       float: right;
-   /* @media (max-width: 600px) {
-      width: 100%;
-  } */
 }
 .social a {
       float: left;
@@ -284,11 +274,6 @@ footer p {
       color: white;
       text-align: center;
       font-weight: bold; 
-      /*@include transition(all, 0.3s);
-       &:hover {
-         background-color: #222;
-         @include transition(all, .3s);
-       } */
 }
 
 
