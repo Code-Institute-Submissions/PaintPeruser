@@ -130,6 +130,9 @@ Additional media query options will be investigated to remedy this.
 - Styling was added via html on the EmailJS template which successfully appeared on the site preview. This styling did not appear in the final email however, hence the plain styling of the email that is received by the customer. Future emails would ideally be on-brand to give end-user consistency.
 EmailJS documentation states that html/css styling is supported however do not seem to have any FAQs offering assistance with this.
 
+- The CSS Validator flags up an aspect of the footer (margin-top: 16px 0;). This is margin-collapse CSS which means that there is no excess grey bar above the footer, which is the preferred styling. According to W3 Schools, this is valid CSS: https://www.w3schools.com/cssref/pr_margin-top.asp 
+The W3C validation service however flags this as an error.
+
 ## Attributation
 
  Site background image: 
@@ -159,4 +162,12 @@ https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
 - Assistance with pushing content out of the way of the dropdown: https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
 
 - Removal of the main image background utilised www.remove.bg 
+
+
+## Testing
+
+### Validation service
+- As mentioned in 'Known Issues', the CSS validator picks up a margin-collapse CSS as an error, despite it being supported CSS. It has been left and flagged here just in case as it is essential for the desired styling of the footer.
+
+- The HTML validator picked up several errors - missing alt attributes on the main image and it's overlay along with contrasting id and label names on the quote box. These were all remedied successfully.
 

@@ -8,10 +8,10 @@
     <title>PaintPeruser</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"
+    <script
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
     (function(){
         emailjs.init("user_HczxxiNyxUaP3rvjWFCd2");
     })();
@@ -85,8 +85,8 @@
         </div>
       </div>
       <div class="container-fluid main-image-container">
-        <img id="main-image" class="default-hue" src="assets/images/sofa-red.jpg">
-        <img class="main-image-overlay" src="assets/images/sofa-red-overlay.png">
+        <img id="main-image" class="default-hue" src="assets/images/sofa-red.jpg" alt="Red Sofa and changing background.">
+        <img class="main-image-overlay" src="assets/images/sofa-red-overlay.png" alt="Overlay allowing the background colour to change.">
       </div>
       <div class="text-center">
         <button type="button" id="pick-me-btn" class="btn btn-secondary">Choose this colour</button>
@@ -115,7 +115,7 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-3">
-            <label for="colour_choice">Colour Choice</label>
+            <label for="dropdown-calculator">Colour Choice</label>
             <select class="custom-select" id="dropdown-calculator" name="choose_colour_two" required aria-label="choose-colour">
               <option selected disabled value="">Choose a colour</option>
               <option value="Blaze Red">Blaze Red</option>
@@ -128,7 +128,7 @@
             </select>
           </div>
           <div class="form-group col-md-3">
-            <label for="square_feet">Square Footage Required</label>
+            <label for="square-feet">Square Footage Required</label>
             <input name="square_feet" type="text" class="form-control" id="square-feet" placeholder="Square Feet" required>
           </div>
           <div class="form-group col-md-3">
@@ -136,8 +136,8 @@
             <input name="price" type="text" class="form-control" id="priceBox" placeholder="Price" disabled>
           </div>
           <div class="form-group col-md-3">
-            <label for="quote_number">Quote Number</label>
-            <input name="quote" type="text" class="form-control" id="quoteBox" placeholder="N/A"disabled>
+            <label for="quoteBox">Quote Number</label>
+            <input name="quote" type="text" class="form-control" id="quoteBox" placeholder="N/A" disabled>
           </div>
         </div>
         <div class="form-group">
@@ -172,7 +172,7 @@
 
   <footer>
   <div class="copyright">
-    <p>&copy 2020 - PaintPeruser</p>
+    <p>&copy; 2020 - PaintPeruser</p>
   </div>
   <div class="social">
     <a data-toggle="modal" data-target="#myModal" href="#myModal" class="support">Contact Us</a>
