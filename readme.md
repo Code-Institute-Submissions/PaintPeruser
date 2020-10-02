@@ -63,6 +63,8 @@ The quote box was designed to be compact and straightforward - enter your detail
 
 There originally also was no reset on the details, but was quickly added when it became clear that clearing the local storage is convoluted when you do not have a created option. Even then, there was no confirmation question so the data was just gone on a single click - convenient but error prone. A confirmation popup was added to reduce accidental clicking and user frustration.
 
+As stated elsewhere in the project, EmailJS didn't appear to pass through CSS inline styling on the templates made. The template originally had a background colour, border lines around the quote and text styling to make it not plain-looking. Due to these not coming through in tests, the template was revised to plain-text, though this doesnt relay the rounded user experience that I hoped for.
+
 A modal was chosen for the contact details, since an additional page seemed redundant and the additional writing on the page didnt seem to have a place. The modal allows the details to be prominent and easy to copy should they choose. In the real world also, the social links would lead to the social pages for the actual company, rather than the main sites.
 
 Finally a note on the navbar. A fair amount of change went into this as finding a good middlegroud took some effort. Due to the one-page nature of the site, the nav links remaining at the top seemed not user-friendly. When the nav links scrolled with you, they would blend into the background content with the navbar being transparent, which i didnt want to get rid of as it looks clean and neat.
@@ -109,7 +111,8 @@ On the first navigation, a 404 error was presented. Manually navigating to https
 
 In addition, on first hosting the main image was non-functional and the javascript was not successfully connected.
 
-ADD FIX HERE!
+This was remedied by amending the file structure in the project - while repl.it could utilise the '../assets/....' structure taught in the course, GitHub Pages could not. 
+As such this was amended to 'assets/....' which fixed the issue.
 
 
 Code was locally viewed and edited via repl.it.

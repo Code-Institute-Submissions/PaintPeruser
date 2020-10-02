@@ -337,11 +337,24 @@ pushUp{
   .navbar-brand {
     font-size: 28pt;
   }
+
+  .main-image-overlay {
+  width: 95.5%;
+  }
 }
 
 @media screen and (max-width: 700px) {
  .main-image-container {
   width: 90%;
   height: 60vw;
+  }
+  .main-image-overlay {
+  width: 94.5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-image-overlay {
+  width: 93.5%;
   }
 }
