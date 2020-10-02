@@ -4,7 +4,8 @@ function sendMail(contactForm) {
         "emailaddress": contactForm.emailaddress.value,
         "paintcolour": contactForm.choose_colour_two.value,
         "quantity": contactForm.square_feet.value,
-        "price": contactForm.price.value
+        "price": contactForm.price.value,
+        "quote": contactForm.quote.value
 
     })
     .then(
