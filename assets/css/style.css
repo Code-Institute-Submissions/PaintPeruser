@@ -350,3 +350,12 @@ pushUp{
   width: 93.5%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .btn-success {
+  margin-top: 5px;
+  }
+  .main-image-overlay {
+  width: 92.5%;
+  }
+}

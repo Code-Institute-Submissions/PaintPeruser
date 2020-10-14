@@ -252,3 +252,25 @@ User Experience is deemed to be more important however so using the wave validat
 As in my previous project, the other contrast errors are in the bootstrap standard buttons, which do not pass validation. It was recommended that i restyle these so that they do pass this time, which has now been done.
 
 The other highlights of the validator were positive, such as aria usage and header/footer tags.
+
+
+### Browsers
+
+The below browsers have had the website opened, navigated through and confirmed to be functional, alongside going through the above testing points:
+-Firefox
+-Chrome
+-Microsoft Edge
+
+
+### Testing that GitHub pages matches development version.
+It was observed that the github pages version of the website took 10-15 minutes to reflect the development changes after a deployment.
+
+Aside from that, the final github version matches the development version that is hosted on Repl.it.
+
+
+### W3C and Jigsaw validation
+
+The validators picked up on the issue mentioned above, that the margin settings on the footer were incorrect despite documentation stating that this is an appropriate use case. 
+
+Additionally some warnings were generated, including use of an aria label which was a minunderstood addition from the firefox accessibility flags. Also the suggestion of a heading tag on one of the sections, which is not relevant as the form does not need a header by design.
+
