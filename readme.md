@@ -304,17 +304,39 @@ The buttons which are coloured to both be eye-catching, and to reflect the colou
 
 On clicking them, the image changes to show the wall colour which matches their choice, allowing them to, hopefully, visualise the colour in a room as opposed to a boring paint swatch:
 
+![PP03](https://user-images.githubusercontent.com/61311614/96049600-27b17780-0e70-11eb-85ce-ab54a6d501a3.png)
 
+![PP04](https://user-images.githubusercontent.com/61311614/96049724-57f91600-0e70-11eb-8a6d-28a6e18a15c4.png)
 
-On scrolling down, a central 'choose this colour' button allows them to pull the colour directly down into the relevant quote box field. They can see this directly below the button and prompts them to input their details if they would like a quote.
+On scrolling down, a central 'choose this colour' button allows them to pull the colour directly down into the relevant quote box field:
 
-For user ease, the price is generated in the box also but the details, once input can be saved to the users browser if they wish. If they were to do this and refresh the page, their details would remain. Should they not want this, they can reset the information. Should it be an accidental click, there is a prompt which occurs to ensure that this is their intended course of action.
+![PP05](https://user-images.githubusercontent.com/61311614/96049900-a1e1fc00-0e70-11eb-91a3-ad4150a20124.png)
 
-Once their details are entered (the fields are required), the user is able to send the quote to their email address. They receive a confirmation of sent message and an email is received in their inbox. 
+![PP06](https://user-images.githubusercontent.com/61311614/96049995-d0f86d80-0e70-11eb-919a-9ca727844295.png)
 
-That email has the details of their quote, alongside contact details to take the order further if they want to.
+They can see this directly below the button and prompts them to input their details if they would like a quote:
 
-These contact details can also be found at the bottom of the page via a modal contact popup. These details are also a link to the users mail provider or phone app if they are accessing via phone.
+![PP07](https://user-images.githubusercontent.com/61311614/96050065-ef5e6900-0e70-11eb-8a3f-4212023864bb.png)
+
+For user ease, the price is generated in the box also but the details, once input can be saved to the users browser if they wish. If they were to do this and refresh the page, their details would remain:
+
+![PP08](https://user-images.githubusercontent.com/61311614/96050360-6267df80-0e71-11eb-92a2-33d0fe98979e.png)
+
+Should they not want this, they can reset the information. Should it be an accidental click, there is a prompt which occurs to ensure that this is their intended course of action:
+
+![PP09](https://user-images.githubusercontent.com/61311614/96050533-af4bb600-0e71-11eb-90c6-f6ac420b6f7f.png)
+
+Once their details are entered (the fields are required), the user is able to send the quote to their email address. They receive a confirmation of sent message and an email is received in their inbox:
+
+![PP10](https://user-images.githubusercontent.com/61311614/96050604-cf7b7500-0e71-11eb-9c70-740154e6b285.png)
+
+That email has the details of their quote, alongside contact details to take the order further if they want to:
+
+![PP11](https://user-images.githubusercontent.com/61311614/96050712-0487c780-0e72-11eb-8baa-2e1594aefe46.png)
+
+These contact details can also be found at the bottom of the page via a modal contact popup. These details are also a link to the users mail provider or phone app if they are accessing via phone:
+
+![PP12](https://user-images.githubusercontent.com/61311614/96050754-18332e00-0e72-11eb-892b-f46cdbd8151b.png)
 
 There is access in the footer to other contact details - facebook, twitter and linkedin. The links currently go to just the standard sites as the company does not exist - but in a real use case they would go to the appropriate social sites.
 
