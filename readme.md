@@ -185,7 +185,7 @@ Quote Me - Leads to 'Get your quote'
 
 #### Footer
 Contact Us - Opens modal with contact details in.
-Facebook - Should link to www.facebook.com - currently leads to https://wrightdang.github.io/PaintPeruser/www.facebook.com . Amended to www.facebook.com as a fix.
+Facebook - Should link to www.facebook.com - currently leads to https://wrightdang.github.io/PaintPeruser/www.facebook.com . Amended to https://www.facebook.com as a fix.
 Twitter - as above respective to Twitter.
 Linkedin - as above respective to Linkedin.
 
