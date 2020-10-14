@@ -140,33 +140,40 @@ letter-spacing: 4px;
 }
 
 #blaze-red-btn {
-  background-color: #E6673A;
+  background-color: #C24619;
 }
 
 #azure-blue-btn {
-  background-color: #1396C0;
+  background-color: #107A9E;
 }
 
 #jewel-green-btn {
-  background-color: #14A84A;
+  background-color: #10843B;
 }
 
 #passion-purple-btn {
-  background-color: #D45EDA;
+  background-color: #C02DC8;
 }
 
 #vivid-pink-btn {
-  background-color: #FD5D92;
+  background-color: #DE024C;
 }
 
 #sunburnt-orange-btn {
-  background-color: #CB751F;
+  background-color: #A96119;
 }
 
 #calming-teal-btn {
-  background-color: #03A488;
+  background-color: #038670;
 }
 
+.btn-success {
+  background-color: #208337;
+}
+
+.btn-primary {
+  background-color: #0071EB;
+}
 
 /*---------------------------------------------------- Colours */
 
