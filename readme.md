@@ -210,6 +210,8 @@ Should pull the current colour selection down to the 'colour choice' button in t
 
 Expected to store the current user information into the browser local storage - confirmed. 
 
+User information is overwritten on second click, as a user would expect.
+
 #### Reset these details button
 
 Expected to generate a confirmation message, and once confirmed clear any saved data from the local storage - confirmed.
@@ -217,6 +219,14 @@ Expected to generate a confirmation message, and once confirmed clear any saved 
 #### Send quote button
 
 Should use EmailJS to send an email to the stated address, utilising the details that the user has input into the form boxes - confirmed.
+
+#### Mailto link on modal
+
+Should launch a mail client on the computer of the user, filling in the 'to' field with the email address listed - confirmed.
+
+#### Phone call link on modal
+
+Should launch the phone app with the provided phone number if the user is accessing via mobile. - confirmed on Samsung Galaxy Note 10.
 
 
 ### Responsiveness 
@@ -273,4 +283,47 @@ Aside from that, the final github version matches the development version that i
 The validators picked up on the issue mentioned above, that the margin settings on the footer were incorrect despite documentation stating that this is an appropriate use case. 
 
 Additionally some warnings were generated, including use of an aria label which was a minunderstood addition from the firefox accessibility flags. Also the suggestion of a heading tag on one of the sections, which is not relevant as the form does not need a header by design.
+
+It was also identified that the Jigsaw validator has serious issues with much of the bootstrap built-in CSS. It was instead validated by input, instead of via URL and the remainder of the CSS was rated to pass.
+
+## User story walkthroughs
+
+### User A - New Customer
+
+The user on visiting the site is presented with the site brand, the navigation of where they can go and a call to action of 'Visualise Your Space' The intention is to have them start to think about their own decorating requirements.
+
+They are immediately then presented with 'How it works' ideally dispelling any questions they may have about the site, guiding them on what they can do whilst visiting. They are instructed to find the colour that they like:
+
+![PP01](https://user-images.githubusercontent.com/61311614/96046237-0ef29300-0e6b-11eb-8b48-6a05d599b53d.png)
+
+Below this, they are asked to pick their colour and presented with seven options which are directly above a central image with a plain, grey background:
+
+![PP02](https://user-images.githubusercontent.com/61311614/96048439-870e8800-0e6e-11eb-8c8a-ddc6e9002dd0.png)
+
+The buttons which are coloured to both be eye-catching, and to reflect the colours that they represent. This was deemed to be more appealing and user-friendly than a dropdown, which was originally planned for.
+
+On clicking them, the image changes to show the wall colour which matches their choice, allowing them to, hopefully, visualise the colour in a room as opposed to a boring paint swatch:
+
+
+
+On scrolling down, a central 'choose this colour' button allows them to pull the colour directly down into the relevant quote box field. They can see this directly below the button and prompts them to input their details if they would like a quote.
+
+For user ease, the price is generated in the box also but the details, once input can be saved to the users browser if they wish. If they were to do this and refresh the page, their details would remain. Should they not want this, they can reset the information. Should it be an accidental click, there is a prompt which occurs to ensure that this is their intended course of action.
+
+Once their details are entered (the fields are required), the user is able to send the quote to their email address. They receive a confirmation of sent message and an email is received in their inbox. 
+
+That email has the details of their quote, alongside contact details to take the order further if they want to.
+
+These contact details can also be found at the bottom of the page via a modal contact popup. These details are also a link to the users mail provider or phone app if they are accessing via phone.
+
+There is access in the footer to other contact details - facebook, twitter and linkedin. The links currently go to just the standard sites as the company does not exist - but in a real use case they would go to the appropriate social sites.
+
+
+### User B - Return Customer
+
+A return user would have much the same journey in that they can take a look at the available colours and enquire. 
+
+If they would have saved their details on the previous visit however, on page load they would scroll down to find them already there. They would be able to easily resend their last quote if they wished to or delete those details and make new ones. 
+
+In my opinion, the journey satisfies the proposed user story expectations listed at the beginning of the readme. The user is able to modify the site to visualise their paint choices and follow up, bring value to the proposed business. 
 
