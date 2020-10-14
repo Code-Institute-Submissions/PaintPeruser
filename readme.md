@@ -171,3 +171,84 @@ https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
 
 - The HTML validator picked up several errors - missing alt attributes on the main image and it's overlay along with contrasting id and label names on the quote box. These were all remedied successfully.
 
+
+
+### Page links
+
+#### PaintPeruser logo
+Should navigate back to index.html - confirmed.
+
+#### Navigation bar
+Intro - Leads to top of index.html
+Colours - Leads to 'Pick your colour'
+Quote Me - Leads to 'Get your quote'
+
+#### Footer
+Contact Us - Opens modal with contact details in.
+Facebook - Should link to www.facebook.com - currently leads to https://wrightdang.github.io/PaintPeruser/www.facebook.com . Amended to www.facebook.com as a fix.
+Twitter - as above respective to Twitter.
+Linkedin - as above respective to Linkedin.
+
+
+### Page buttons
+
+#### Three bar button (on navbar)
+
+Appears on page scroll and on tablet media and smaller - confirmed. 
+
+On click - drops down the nav menu and links still function - confirmed.
+
+#### Colour pick buttons
+
+All buttons should change the image below to their respective CSS filter once clicked - confirmed and other css classes are successfully removed also.
+
+#### Choose this colour button
+
+Should pull the current colour selection down to the 'colour choice' button in the form section - confirmed. Price also confirmed to change accordingly.
+
+#### Save these details button
+
+Expected to store the current user information into the browser local storage - confirmed. 
+
+#### Reset these details button
+
+Expected to generate a confirmation message, and once confirmed clear any saved data from the local storage - confirmed.
+
+#### Send quote button
+
+Should use EmailJS to send an email to the stated address, utilising the details that the user has input into the form boxes - confirmed.
+
+
+### Responsiveness 
+
+There are a couple of identified responsive issues on smaller devices:
+- the main image overlay doesn't sit completely correctly over the underlay image - mentioned above. Additional media query sizes added to make them as close as possible on all devices.
+- the 'save these details' and 'reset these details' buttons sit too closely on top of one another on smaller devices - spacing between them added as media queries.
+
+Due to the usage of bootstrap on this site, the remainder of the site behaves well and responds appropriately with window size.
+
+This has been tested using the following settings on Firefox Developer Tools:
+Galaxy S9/S9+
+iPad
+iPhone 6/7/8
+iPhone 6/7/8 Plus
+iPhone X/XS
+Kindle Fire HDX
+
+### UX and screenreader compatibility
+
+The following website was used to assess compatibility with screenreaders
+https://wave.webaim.org/ 
+
+
+#### Initial findings and improvements
+
+Errors - Empty button found, but these is just the three bar dropdown for responsive behaviour
+
+Contrast Errors - These have been located on the colour choice buttons, however they have been specifically chosen to reflect the colours of the background.
+
+User Experience is deemed to be more important however so using the wave validator, darker colours were chosen and implemented so that the buttons passed AA rating for normal text.
+
+As in my previous project, the other contrast errors are in the bootstrap standard buttons, which do not pass validation. It was recommended that i restyle these so that they do pass this time, which has now been done.
+
+The other highlights of the validator were positive, such as aria usage and header/footer tags.
