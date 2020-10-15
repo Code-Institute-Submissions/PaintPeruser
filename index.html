@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-     <script src="https://kit.fontawesome.com/5b83da489c.js" crossorigin="anonymous"></script>
+    <!--Importing fontawesome icons -->
+    <script src="https://kit.fontawesome.com/5b83da489c.js" crossorigin="anonymous"></script>
+    <!--Importing bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <title>PaintPeruser</title>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!--Importing JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--EmailJS necessary script, inclusive of the below function -->
     <script
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -19,48 +23,54 @@
   </head>
   <body>
     <header>
+      <!--Navbar code - nav will fix to top of page and collapse on smaller media -->
       <nav id="mainmenu" class= "navbar-expand-lg navbar fixed-top">
-      <a id="brand" class="navbar-brand" href="index.html">PaintPeruser</a>
-  <!-- Button for toggling the visibility of the menu -->
-  <button type="button" data-target="#collapseNavbar" data-toggle="dropdown" class="navbar-toggler">
-    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-  </button>
-  <!-- Navigation menu container -->
-  <div class="navbar-collapse collapse " id="collapseNavbar" >
-    <!-- Navigation links -->
-    <ul class="navbar-nav ml-auto" id="menu">
-      <li>
-            <a class="nav-link" href="index.html">Intro</a>
-        </li>
-        <li>
-            <a class="nav-link" href="index.html#colour-pick-text">Colours</a>
-        </li>
-        <li>
-            <a class="nav-link" href="index.html#email-form">Quote Me</a>
-        </li>
-    </ul>
-  </div> 
-</nav>
+        <a id="brand" class="navbar-brand" href="index.html">PaintPeruser</a>
+        <!-- Button for toggling the visibility of the menu -->
+        <button type="button" data-target="#collapseNavbar" data-toggle="dropdown" class="navbar-toggler">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <!-- Navigation menu container -->
+        <div class="navbar-collapse collapse " id="collapseNavbar" >
+          <!-- Navigation links -->
+          <ul class="navbar-nav ml-auto" id="menu">
+            <li>
+              <a class="nav-link" href="index.html">Intro</a>
+            </li>
+            <li>
+              <a class="nav-link" href="index.html#colour-pick-text">Colours</a>
+            </li>
+            <li>
+              <a class="nav-link" href="index.html#email-form">Quote Me</a>
+            </li>
+          </ul>
+        </div> 
+      </nav>
     </header>
+    <!--Call to action text - centered -->
     <div class="main-text text-center">
       <div> Visualise Your Space</div>
-      </div>
+    </div>
+    <!--Explanation box - guide users through the site -->
     <div>
-        <h3 class="colour-pick-text">How it works</h3>
-      </div>
+      <h3 class="colour-pick-text">How it works</h3>
+    </div>
     <hr class="block-divider block-divider-bottom-margin">
     <div class="container about-container text-center">
       <div class="row">
+        <!--Step 1 - Find colour -->
         <div class="col-md-4">
           <i class="details-icon fas fa-palette"></i>
           <p>Find the colour that you like</p>
           <p>We offer the below bespoke colours in bulk to reduce your decorating costs</p>
         </div>
+        <!--Step 2 - Enter details -->
         <div class="col-md-4">
           <i class="details-icon fas fa-envelope"></i>
           <p>Fill in your details, measure your square footage and get a price</p>
           <p>You can even email the completed quote over to yourself. This has on the next steps you can take if you want to proceed.</p>
         </div>
+        <!--Contact CTA -->
         <div class="col-md-4">
           <i class="details-icon fas fa-mobile"></i>
           <p>Drop us a call or an email and our friendly team of representatives will help.</p>
@@ -69,6 +79,7 @@
       </div>
     </div>
     <section>
+      <!--Controlling buttons for the CSS filters - links with script.js -->
       <div>
         <h3 id="colour-pick-text" class="colour-pick-text">Pick your colour</h3>
       </div>
@@ -84,10 +95,12 @@
           <button type="button" id="calming-teal-btn" class="btn btn-secondary">Calming Teal</button>
         </div>
       </div>
+      <!--Underlying image and overlay image. id=main-image changes with CSS and id=main-image-overlay does not. Default hue is the standard overlay which greyscales the background wall.-->
       <div class="container-fluid main-image-container">
         <img id="main-image" class="default-hue" src="assets/images/sofa-red.jpg" alt="Red Sofa and changing background.">
         <img class="main-image-overlay" src="assets/images/sofa-red-overlay.png" alt="Overlay allowing the background colour to change.">
       </div>
+      <!--Button to pull the current choice down into the form box - links with JS in script.js (pick-me-btn)  -->
       <div class="text-center">
         <button type="button" id="pick-me-btn" class="btn btn-primary">Choose this colour</button>
       </div>
@@ -96,6 +109,7 @@
         <h3 class="colour-pick-text">Get your quote.</h3>
       </div>
     <hr class="block-divider block-divider-bottom-margin">
+    <!--Quote box, capturing user details and linked primarily to emailer.js. Others too, listed below. -->
     <section class="form-container">
       <div id="email-form" class="card bg-transparent text-center border-dark">
       <form onsubmit="return sendMail(this);">
@@ -115,6 +129,7 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-3">
+            <!--Linked to the 'Pick this colour' button above, but also can be controlled as a dropdown. -->
             <label for="dropdown-calculator">Colour Choice</label>
             <select class="custom-select" id="dropdown-calculator" name="choose_colour_two" required aria-label="choose-colour">
               <option selected disabled value="">Choose a colour</option>
@@ -127,6 +142,7 @@
               <option  value="Calming Teal">Calming Teal</option>
             </select>
           </div>
+          <!--Square Footage and Price are used/generated with the colour price modifier in pricecalculator.js -->
           <div class="form-group col-md-3">
             <label for="square-feet">Square Footage Required</label>
             <input name="square_feet" type="text" class="form-control" id="square-feet" placeholder="Square Feet" required>
@@ -135,61 +151,74 @@
             <label for="priceBox">Price</label>
             <input name="price" type="text" class="form-control" id="priceBox" placeholder="Price" disabled>
           </div>
+          <!--Quote number also generated by pricecalculator.js. It utilises the current date and time to generate a unique number -->
           <div class="form-group col-md-3">
             <label for="quoteBox">Quote Number</label>
             <input name="quote" type="text" class="form-control" id="quoteBox" placeholder="N/A" disabled>
           </div>
         </div>
         <div class="form-group">
+          <!--Save and reset details controlled in savedetails.js. Both functions edit the local storage in the users browser, saving choices as key:value pairs. -->
           <div>
             <button onclick="saveDetails()" type="button" class="btn btn-success">Save these details</button>
             <button onclick="resetDetails()" type="button" class="btn btn-success">Reset these details</button>
           </div>
         </div>
-  <button type="submit" class="btn btn-primary">Send Quote</button>
-</form>
-    </div>
+        <!--Submit button linked to emailer.js -->
+        <button type="submit" class="btn btn-primary">Send Quote</button>
+      </form>
+      </div>
     </section>
-  <div class="modal" id="myModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content text-center">
-      <div class="modal-header">
-        <h4 class="modal-title">Contact Details</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <a href="mailto:dwrightdevmail@gmail.com"><i class="fas fa-envelope"></i>  dwrightdevmail@gmail.com</a>
-        <!---->
-        <br>
-        <a href="tel:+441234567890"><i class="fas fa-phone-alt"></i> 01234 567890</a>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!--Modal popup for contact details - email and phone number -->
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h4 class="modal-title">Contact Details</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <!--Necessary to close the modal - keep intact -->
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--Change email here if new paintperuser email is setup -->
+            <a href="mailto:dwrightdevmail@gmail.com"><i class="fas fa-envelope"></i>  dwrightdevmail@gmail.com</a>
+            <!---->
+            <br>
+            <!--Change phone number here if number assigned -->
+            <a href="tel:+441234567890"><i class="fas fa-phone-alt"></i> 01234 567890</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-  <footer>
-  <div class="copyright">
-    <p>&copy; 2020 - PaintPeruser</p>
-  </div>
-  <div class="social">
-    <a data-toggle="modal" data-target="#myModal" href="#myModal" class="support">Contact Us</a>
-    <a href ="https://www.facebook.com" target="_blank" aria-label="link-to-facebook" class="face">f</a>
-    <a href ="https://www.twitter.com" target="_blank" aria-label="link-to-twitter" class="tweet">t</a>
-    <a href ="https://www.linkedin.com" target="_blank" aria-label="link-to-linkedin" class="linked">in</a>
-  </div>
-  </footer>
+  
+    <footer>
+      <!--Amend copyright info here yearly -->
+      <div class="copyright">
+        <p>&copy; 2020 - PaintPeruser</p>
+      </div>
+      <!--Social links - currently linked to the main facebook, twitter and linkedin pages -->
+      <div class="social">
+        <a data-toggle="modal" data-target="#myModal" href="#myModal" class="support">Contact Us</a>
+        <a href ="https://www.facebook.com" target="_blank" aria-label="link-to-facebook" class="face">f</a>
+        <a href ="https://www.twitter.com" target="_blank" aria-label="link-to-twitter" class="tweet">t</a>
+        <a href ="https://www.linkedin.com" target="_blank" aria-label="link-to-linkedin" class="linked">in</a>
+      </div>
+    </footer>
+    <!--Script links to external js - here so that they only start once the other content has loaded. -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/scroller.js"></script>
     <script src="assets/js/pricecalculator.js"></script>
-     <script src="assets/js/emailer.js"></script>
-     <script src="assets/js/savedetails.js"></script>
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/emailer.js"></script>
+    <script src="assets/js/savedetails.js"></script>
+    <!--Additional JQuery script for compatibility -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--PopperJS, used for collapsing navbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!--Bootstrap JS, also needed for collapsing navbar -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
