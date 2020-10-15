@@ -1,4 +1,5 @@
 
+/*Main code for the main image functionality - removes default hue amongst any others on the main image and adds the class of the colour that is chosen. */
 $(document).ready(function() {
     $("#blaze-red-btn").click(function(){
         $("#main-image").removeClass("passion-purple jewel-green azure-blue calming-teal sunburnt-orange vivid-pink default-hue").addClass("blaze-red");
@@ -23,7 +24,7 @@ $(document).ready(function() {
     });
 });
 
-
+/*Controls the button under the main image which stores the exisiting colour choice and pushes it to the dropdown in the quote box. There is also a calculate price call here too so that the user does not make the mistake that all the colours cost the same. */
 $('#pick-me-btn').on('click', function() {
   var current_choice = $("#main-image").attr("class");
   switch (current_choice) {
@@ -48,12 +49,3 @@ $('#pick-me-btn').on('click', function() {
   calculatePrice();
 });
 
-
-
-/* Experiment with if statements to remove the classes
-
-https://forum.jquery.com/topic/combination-of-addclass-hasclass-and-removeclass
-
-Perhaps toggleClass
-
-https://api.jquery.com/toggleclass/ */

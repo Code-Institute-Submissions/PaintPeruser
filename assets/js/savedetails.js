@@ -1,5 +1,5 @@
 
-
+/*Stores the values in the quote box and sets them as a local storage entity until deleted.*/
 function saveDetails() {
   var firstname = $("#fname").val();
   var lastname = $("#lname").val();
@@ -21,6 +21,7 @@ function saveDetails() {
   alert("Your choices have been saved.");
 }
 
+/*Asks the user for a response as to whether they want to proceed. On yes, any local storage key:value pairs are removed.*/
 function resetDetails() {
   var response;
   var confirmation = confirm("Are you sure? All details will be lost.");
@@ -40,6 +41,7 @@ function resetDetails() {
   };
 };
 
+/*This function grabs existing stored values and loads them into the appropriate form boxes on page load - for return customers. */
 $(document).ready(function() {
   var firstname = localStorage.getItem("firstname");
   var lastname = localStorage.getItem("lastname"); 
