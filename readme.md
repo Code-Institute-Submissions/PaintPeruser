@@ -43,7 +43,7 @@ They are then able to add their details in order to get a price quote for their 
 
 The option is also presented for their details to remain in their browser storage for ease of coming back to, or for future reference/orders. This can be cleared with the second 'reset' button.
 
-Finally there are contact details (which are presented in a closable modal window) and social media links for the customers persual.
+Finally there are contact details (which are presented in a closable modal window) and social media links for the customers perusal.
 
 ## Design Decisions
 
@@ -55,7 +55,7 @@ I settled again for Lato as the font for the body, since it's easy on the eyes a
 They are then drawn to the main image below - focusing first on the bright colour change buttons. On clicking one (or more) of the buttons, the grey monotone image background changes to their chosen vivid colour that they are deciding between.
 The design is meant to be eye catching and originally the image was in it's standard red, but the grey hue was added as the default so there is more of a stark difference when the user first makes their selection.
 
-The buttons were also originally a dropdown menu as it was easier to incorporate the javascript around. A mentor meeting however highlighted the value in the user being able to preview their colour (in the button styling) and whereas the dropdown menu was below the image, the buttons were moved up top so the call to action was more prominent.
+The buttons were also originally a dropdown menu as it was easier to incorporate the JavaScript around. A mentor meeting however highlighted the value in the user being able to preview their colour (in the button styling) and whereas the dropdown menu was below the image, the buttons were moved up top so the call to action was more prominent.
 
 A mentor suggestion was also made for the 'choose this colour' below the image. This adds to ease of use for the client so that they don't have to scroll back up to recheck the colour name for their quote, they can instead click a single button which pulls their choice into the box.
 
@@ -63,13 +63,13 @@ The quote box was designed to be compact and straightforward - enter your detail
 
 There originally also was no reset on the details, but was quickly added when it became clear that clearing the local storage is convoluted when you do not have a created option. Even then, there was no confirmation question so the data was just gone on a single click - convenient but error prone. A confirmation popup was added to reduce accidental clicking and user frustration.
 
-As stated elsewhere in the project, EmailJS didn't appear to pass through CSS inline styling on the templates made. The template originally had a background colour, border lines around the quote and text styling to make it not plain-looking. Due to these not coming through in tests, the template was revised to plain-text, though this doesnt relay the rounded user experience that I hoped for.
+As stated elsewhere in the readme document, EmailJS didn't appear to pass through CSS inline styling on the templates made. The template originally had a background colour, border lines around the quote and text styling to make it not plain-looking. Due to these not coming through in tests, the template was revised to plain-text, though this doesn't relay the rounded user experience that I hoped for.
 
-A modal was chosen for the contact details, since an additional page seemed redundant and the additional writing on the page didnt seem to have a place. The modal allows the details to be prominent and easy to copy should they choose. In the real world also, the social links would lead to the social pages for the actual company, rather than the main sites.
+A modal was chosen for the contact details, since an additional page seemed redundant and the additional writing on the page didn't seem to have a place. The modal allows the details to be prominent and easy to copy should they choose. In the real world also, the social links would lead to the social pages for the actual company, rather than the main sites.
 
-Finally a note on the navbar. A fair amount of change went into this as finding a good middlegroud took some effort. Due to the one-page nature of the site, the nav links remaining at the top seemed not user-friendly. When the nav links scrolled with you, they would blend into the background content with the navbar being transparent, which i didnt want to get rid of as it looks clean and neat.
+Finally a note on the navbar. A fair amount of change went into this as finding a good middle-ground took some effort. Due to the one-page nature of the site, the nav links remaining at the top seemed to not be user-friendly. When the nav links scrolled with you, they would blend into the background content with the navbar being transparent, which i didnt want to get rid of as it looks clean and neat.
 
-As such, javascript was used to allow the transparent nav at the top, but a translucent appearance added on scroll. This allows the nav content to be seen, even if it does flow over the page content. An effort has been made for this not to be the general case however in the site content being restricted in width and the brand minimising to it's first letter on scroll, so both sides of the nav flow either side of the page content.
+As such, JavaScript was used to allow the transparent nav at the top, but a translucent appearance added on scroll. This allows the nav content to be seen, even if it does flow over the page content. An effort has been made for this not to be the general case however in the site content being restricted in width and the brand minimising to it's first letter on scroll, so both sides of the nav flow either side of the page content.
 
 
 ### Wireframes
@@ -97,9 +97,9 @@ Mobile
 
 - Repl.it - this was the chosen development platform.
 - Bootstrap for site layout, container code, navbar functions - used throughout for rich content and responsive behaviour.
-- JQuery addon used for rich function searching in order to appropriately target html and css for site functionality.
+- JQuery addon used for rich function searching in order to appropriately target html and CSS for site functionality.
 - GitHub - utilised for cloud backups and project progression.
-- GitHub Pages - an aspect of github, used to deploy the finalised product.
+- GitHub Pages - an aspect of Github, used to deploy the finalised product.
 - Figma - used to create wireframe ideas of how the website should look and function. Used as an alternative to Balsamiq to get a feel for other programs
 - Replace.bg - utilised to remove the background from the main site image for the colour overlay.
 
@@ -109,7 +109,7 @@ Mobile
 
 On the first navigation, a 404 error was presented. Manually navigating to https://wrightdang.github.io/PaintPeruser/index.html resolved this and the website remained stable after that.
 
-In addition, on first hosting the main image was non-functional and the javascript was not successfully connected.
+In addition, on first hosting the main image was non-functional and the JavaScript was not successfully connected.
 
 This was remedied by amending the file structure in the project - while repl.it could utilise the '../assets/....' structure taught in the course, GitHub Pages could not. 
 As such this was amended to 'assets/....' which fixed the issue.
@@ -123,45 +123,49 @@ Code was locally viewed and edited via repl.it.
 ## Known issues
 - Due to the recommendation that the main image was changed - a transparent background over the original image as it changes - a small issue has been generated.
 
-Despite the images being the same exact size, they do not line up perfectly. Through various browser inspector trials, it the overlay image was lined up using a width modifier of 97.5%, which looks great on most displays. On small displays however, the an overhang of the main image persists, which isn't remedied by the overflow css option.
+  Despite the images being the same exact size, they do not line up perfectly. Through various browser inspector trials, it the overlay image was lined up using a width modifier of 97.5%, which looks great on most displays. On small displays however, the an overhang of the main image persists, which isn't remedied by the overflow CSS option.
 
-Additional media query options will be investigated to remedy this.
+  Additional media query options have been looked into and additional breakpoints have had new width percentages added to try to cater to all audiences.
 
 - Styling was added via html on the EmailJS template which successfully appeared on the site preview. This styling did not appear in the final email however, hence the plain styling of the email that is received by the customer. Future emails would ideally be on-brand to give end-user consistency.
-EmailJS documentation states that html/css styling is supported however do not seem to have any FAQs offering assistance with this.
+EmailJS documentation states that HMTL/CSS styling is supported however do not seem to have any FAQs offering assistance with this.
 
 - The CSS Validator flags up an aspect of the footer (margin-top: 16px 0;). This is margin-collapse CSS which means that there is no excess grey bar above the footer, which is the preferred styling. According to W3 Schools, this is valid CSS: https://www.w3schools.com/cssref/pr_margin-top.asp 
 The W3C validation service however flags this as an error.
 
-## Attributation
+## Attribution
 
- Site background image: 
-https://www.pexels.com/photo/grey-abstract-wallpaper-3137052/
+- Site background image: 
+  https://www.pexels.com/photo/grey-abstract-wallpaper-3137052/
 
-Main sofa image by CAMACHO03: https://pixabay.com/photos/sofa-orange-cushion-furniture-5213406/
+- Main sofa image by CAMACHO03:
+  https://pixabay.com/photos/sofa-orange-cushion-furniture-5213406/
 
 - Footer details adopted from 'Another simple footer' by toama:
-https://codepen.io/toamaenepitin/pen/gObvrxd
+  https://codepen.io/toamaenepitin/pen/gObvrxd
 
 
 - JQuery assistance from StackOverflow:
-https://stackoverflow.com/questions/12631746/change-css-based-on-drop-down-selections-value-using-jquery
+  https://stackoverflow.com/questions/12631746/change-css-based-on-drop-down-selections-value-using-jquery
 
-https://stackoverflow.com/questions/10412103/populate-form-with-localstorage
+  https://stackoverflow.com/questions/10412103/populate-form-with-localstorage
 
 - Assistance with price calculations: 
+  https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
 
-https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
+- Assistance with Date.now to generate unique IDs:
+  https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13
 
-- Assistance with Date.now to generate unique IDs: https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13
+- Assistance with the CSS filter used to generate the image colours:  https://css-tricks.com/almanac/properties/f/filter/
 
-- Assistance with the CSS filter used to generate the image colours: https://css-tricks.com/almanac/properties/f/filter/
+- Assistance with scrolling behaviour:
+  https://stackoverflow.com/questions/45599455/change-logo-on-scroll-bootstrap-3
 
-- Assistance with scrolling behaviour: https://stackoverflow.com/questions/45599455/change-logo-on-scroll-bootstrap-3
+- Assistance with pushing content out of the way of the dropdown:
+  https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
 
-- Assistance with pushing content out of the way of the dropdown: https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
-
-- Removal of the main image background utilised www.remove.bg 
+- Removal of the main image background:
+  https://www.remove.bg 
 
 
 ## Testing
@@ -200,7 +204,7 @@ On click - drops down the nav menu and links still function - confirmed.
 
 #### Colour pick buttons
 
-All buttons should change the image below to their respective CSS filter once clicked - confirmed and other css classes are successfully removed also.
+All buttons should change the image below to their respective CSS filter once clicked - confirmed and other CSS classes are successfully removed also.
 
 #### Choose this colour button
 
@@ -259,7 +263,7 @@ Contrast Errors - These have been located on the colour choice buttons, however 
 
 User Experience is deemed to be more important however so using the wave validator, darker colours were chosen and implemented so that the buttons passed AA rating for normal text.
 
-As in my previous project, the other contrast errors are in the bootstrap standard buttons, which do not pass validation. It was recommended that i restyle these so that they do pass this time, which has now been done.
+As in my previous project, the other contrast errors are in the bootstrap standard buttons, which do not pass validation. It was recommended that I restyle these so that they do pass this time, which has now been done.
 
 The other highlights of the validator were positive, such as aria usage and header/footer tags.
 
@@ -267,22 +271,22 @@ The other highlights of the validator were positive, such as aria usage and head
 ### Browsers
 
 The below browsers have had the website opened, navigated through and confirmed to be functional, alongside going through the above testing points:
--Firefox
--Chrome
--Microsoft Edge
+- Firefox
+- Chrome
+- Microsoft Edge
 
 
 ### Testing that GitHub pages matches development version.
-It was observed that the github pages version of the website took 10-15 minutes to reflect the development changes after a deployment.
+It was observed that the Github pages version of the website took 10-15 minutes to reflect the development changes after a deployment.
 
-Aside from that, the final github version matches the development version that is hosted on Repl.it.
+Aside from that, the final Github version matches the development version that is hosted on Repl.it.
 
 
 ### W3C and Jigsaw validation
 
 The validators picked up on the issue mentioned above, that the margin settings on the footer were incorrect despite documentation stating that this is an appropriate use case. 
 
-Additionally some warnings were generated, including use of an aria label which was a minunderstood addition from the firefox accessibility flags. Also the suggestion of a heading tag on one of the sections, which is not relevant as the form does not need a header by design.
+Additionally some warnings were generated, including use of an aria label which was a misunderstood addition from the Firefox accessibility flags. Also the suggestion of a heading tag on one of the sections, which is not relevant as the form does not need a header by design.
 
 It was also identified that the Jigsaw validator has serious issues with much of the bootstrap built-in CSS. It was instead validated by input, instead of via URL and the remainder of the CSS was rated to pass.
 
@@ -338,7 +342,7 @@ These contact details can also be found at the bottom of the page via a modal co
 
 ![PP12](https://user-images.githubusercontent.com/61311614/96050754-18332e00-0e72-11eb-892b-f46cdbd8151b.png)
 
-There is access in the footer to other contact details - facebook, twitter and linkedin. The links currently go to just the standard sites as the company does not exist - but in a real use case they would go to the appropriate social sites.
+There is access in the footer to other contact details - Facebook, Twitter and Linkedin. The links currently go to just the standard sites as the company does not exist - but in a real use case they would go to the appropriate social sites.
 
 
 ### User B - Return Customer
@@ -347,5 +351,8 @@ A return user would have much the same journey in that they can take a look at t
 
 If they would have saved their details on the previous visit however, on page load they would scroll down to find them already there. They would be able to easily resend their last quote if they wished to or delete those details and make new ones. 
 
-In my opinion, the journey satisfies the proposed user story expectations listed at the beginning of the readme. The user is able to modify the site to visualise their paint choices and follow up, bring value to the proposed business. 
+
+## Conclusion
+
+In my opinion, the journey satisfies the proposed user story expectations listed at the beginning of the readme. The user is able to modify the site to visualise their paint choices and follow up, bringing value to the proposed business. 
 
