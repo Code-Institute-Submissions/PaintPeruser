@@ -32,7 +32,7 @@ function calculatePrice() {
 /*Uses the current date and time to generate a unique ID for the quotes.*/
 function generateID() {
   if ($("#quoteBox").val() == "") {
-    var id = Date.now()
+    var id = Date.now();
     $("#quoteBox").val(id);
   };
 };

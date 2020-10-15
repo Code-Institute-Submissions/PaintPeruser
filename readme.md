@@ -175,6 +175,8 @@ The W3C validation service however flags this as an error.
 
 - The HTML validator picked up several errors - missing alt attributes on the main image and it's overlay along with contrasting id and label names on the quote box. These were all remedied successfully.
 
+- As advised on the Assessment handbook, the JavaScript on this project was run through JShint. It picked up a missing semicolon, which was rectified. In addition it states that in three cases there are additional semi-colons (as a warning, not an error) but they were left as they are present in the guidance notes.
+
 
 
 ### Page links
