@@ -160,6 +160,8 @@ body {
   padding-top: 15px;
 }
 
+/*These button colours were originally matched to the hues they represent, however that didnt match colour contrast values, so were amended to be darker.*/
+
 #blaze-red-btn {
   background-color: #C24619;
 }
@@ -198,6 +200,7 @@ body {
 
 /*---------------------------------------------------- Colour Hues */
 
+/*These are the controllers for the colours. The hue change is from 0 (the image's normal red), to 360 (also the normal red). The colours in between are in a circular hue wheel which can be seen at https://css-tricks.com/almanac/properties/f/filter/ */
 .azure-blue {
   filter: hue-rotate(180deg);
 }
@@ -249,7 +252,7 @@ body {
 
 /* -------------------------------------------------- footer */
 
-
+/*The margin top value here has been flagged by the validators, but it appears to be valid CSS. It is also necessary to keep the footer appearing as intended.*/
 footer {
   width: 100%;
   display: inline-block;
@@ -287,7 +290,7 @@ footer p {
       font-weight: bold; 
 }
 
-
+/*The social links have been made to match their respective site brand colours.*/
 .linked {
   background-color: #2867b2;
   font-size: inherit;
@@ -315,6 +318,7 @@ footer p {
 
 /*---------------------------------------------- Media Queries */
 
+/*The main media query needs here are to ensure that the navbar behaves as expected on all devices, and ensuring that the image and image overlays match as closely as possible.*/
 @media screen and (max-width: 990px) {
   .navbar-toggler-icon  {
     font-size: 18px;

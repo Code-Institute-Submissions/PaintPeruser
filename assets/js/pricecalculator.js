@@ -22,14 +22,14 @@ function getColour() {
   }
   return colourIndex;
   }
-
+/*Takes the base price, squarefootage and the colour value price to calculate a total price in £, dynamically for the user.*/
 function calculatePrice() {
   getColour();
   var sqFeet = $("#square-feet").val();
   var price = "£" + Math.floor((basePrice + (sqFeet * colourIndex)));
   $("#priceBox").val(price);
 }
-
+/*Uses the current date and time to generate a unique ID for the quotes.*/
 function generateID() {
   if ($("#quoteBox").val() == "") {
     var id = Date.now()
@@ -37,11 +37,9 @@ function generateID() {
   };
 };
 
-/* Do we need to generate a new ID when the quote is sent?
-Maybe once the email is sent, the local storage for the quote ID is removed? That however would remove their saved details... Maybe leave the quote switching all the time and we only save the ones that are emailed through?? */
 
 
-/* was using .change however the selection was not dynamically updating - attempting to use .on to remedy:
+/* was using .change however the selection was not dynamically updating - managed to use .on to remedy:
 https://stackoverflow.com/questions/13418963/jquery-onchange-function-not-triggering-for-dynamically-created-inputs */
 
 $("#dropdown-calculator, #square-feet").on('change', function() {
