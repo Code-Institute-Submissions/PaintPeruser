@@ -1,13 +1,16 @@
-
+/*Font for logo and main text */
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+/*Font for body */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
+/*----------------------------------------------- Navigation */
 .navbar {
   color: midnightblue;
   font-family: "Architects Daughter", sans-serif;
 }
 
+/*Set the nav background on scroll so that the text can be seen over the main content*/
 .translucent-nav {
   background: rgba(212, 235, 242, 0.75);
 }
@@ -18,24 +21,15 @@
   color: midnightblue;
 }
 
-body {
-  background-image: url("../images/hex.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #cccccc;
-  background-position: center;
-  padding-top: 50px;
-  font-family: 'Lato', sans-serif;
-}
 
 #menu {
 font-size: 110%;
 list-style-type: none;
 letter-spacing: 4px; 
-
 }
 
- .nav-link{
+/*Set the menu items when dropped down to align right, staying out of the way as much as possible.*/
+.nav-link{
     text-align: right;
 }
 
@@ -56,6 +50,26 @@ letter-spacing: 4px;
   color: blueviolet;
 }
 
+/*------------------------------------------------ Main Body */
+
+/*Standard settings advised by codeinstitute*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Background image controlled here - chosen to be pleasing but unintrusive. Credit to Adrien Olichon - https://www.pexels.com/photo/grey-abstract-wallpaper-3137052/*/
+body {
+  background-image: url("../images/hex.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  background-position: center;
+  padding-top: 50px;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Control for the call to action main text is here. Chosen to match logo*/
 .main-text {
   padding-top: 100px;
   font-size: 50pt;
@@ -70,10 +84,14 @@ letter-spacing: 4px;
   width: 75%;
 }
 
+/*----------------------------------------- Colour picking section */
+
 .colour-pick-text {
   text-align: center;
   padding-top: 100px;
 }
+
+/*Colour changing image details all set here. Controls the width and height of the image as well as setting the two images on top of each other as closely as possible. Media Queries below also assist with this.*/
 
 .main-image-container {
   padding-top: 0;
@@ -92,6 +110,7 @@ letter-spacing: 4px;
   height: auto;
 }
 
+/*z-index set extremely high to ensure that this image is always on top, bugs were present at smaller z-indexes to set like so for safety and continuity of user experience. The 97.5% below was found to work ideally via trial and error, as the two images don't align perfectly under normal settings despite them being of identical size.*/
 .main-image-overlay {
   z-index: 999;
   position: absolute;
@@ -101,6 +120,8 @@ letter-spacing: 4px;
   overflow: hidden;
 
 }
+
+/*-------------------------------------------- Quote form section */
 
 .colour-dropbox {
   width: 25%;
@@ -175,7 +196,7 @@ letter-spacing: 4px;
   background-color: #0071EB;
 }
 
-/*---------------------------------------------------- Colours */
+/*---------------------------------------------------- Colour Hues */
 
 .azure-blue {
   filter: hue-rotate(180deg);
@@ -222,28 +243,11 @@ letter-spacing: 4px;
   background-color: #777777;
 }
 
-.block-divider-white {
-  background-color: #fff;
-}
-
 .block-divider-bottom-margin {
   margin-bottom: 20px;
 }
 
 /* -------------------------------------------------- footer */
-
-
-
-
-
-/* Colors */
-
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 
 
 footer {
@@ -309,18 +313,7 @@ footer p {
   width: 40%;
 }
 
-/* -------------------------------------- Push Transitions */
-
-.push{
-    transition: transform 0.5s;
-    transform: translate(0px, 160px);
-}
-
-pushUp{
-  transition: transform 0.5s;
-  transform: translate(0px, 0px);
-}
-
+/*---------------------------------------------- Media Queries */
 
 @media screen and (max-width: 990px) {
   .navbar-toggler-icon  {
