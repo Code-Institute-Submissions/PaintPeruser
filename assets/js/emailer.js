@@ -1,5 +1,4 @@
-/*This JS controls the link between the site and EmailJS. It pulls the names of the form boxes and passes them as values to the emailjs template. The template is controlled on the EmailJs website.
-The final code logs to the console whether the email has successfully been sent, and informs the user as such. */
+/*Below is the function that ensures values are all added before submission of the email quote. This code is only necessary if the users browser doesn't support the bootstrap 'required' tags or if those tags are removed. This is provided as a backup. */
 
 function validateForm() {
   var fname = document.forms["email-form"].fname.value;
@@ -31,6 +30,9 @@ function validateForm() {
     return true;
   }
 } 
+
+/*This JS controls the link between the site and EmailJS. It pulls the names of the form boxes and passes them as values to the emailjs template. The template is controlled on the EmailJs website.
+The final code logs to the console whether the email has successfully been sent, and informs the user as such. */
 
 function sendMail(contactForm) {
     emailjs.send("service_26ufq5f", "template_w42ccsw", {
