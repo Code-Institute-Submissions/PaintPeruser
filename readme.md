@@ -104,83 +104,84 @@ Mobile
 - Replace.bg - utilised to remove the background from the main site image for the colour overlay.
 - realfavicongenerator.net - used to correctly generate site favicon
 
-## Deployment Procedure
-- Github pages utilised for deployment - process as follows: 
-- Navigate to https://github.com/WrightDanG/PaintPeruser/ -Settings, scroll down to Github pages -Select the master branch, root directory and click deploy. -Site is hosted at https://wrightdang.github.io/PaintPeruser/
-
-On the first navigation, a 404 error was presented. Manually navigating to https://wrightdang.github.io/PaintPeruser/index.html resolved this and the website remained stable after that.
-
-In addition, on first hosting the main image was non-functional and the JavaScript was not successfully connected.
-
-This was remedied by amending the file structure in the project - while repl.it could utilise the '../assets/....' structure taught in the course, GitHub Pages could not. 
-As such this was amended to 'assets/....' which fixed the issue.
-
-
-Code was locally viewed and edited via repl.it.
-
-
-
-
-## Known issues
-- Due to the recommendation that the main image was changed - a transparent background over the original image as it changes - a small issue has been generated.
-
-  Despite the images being the same exact size, they do not line up perfectly. Through various browser inspector trials, it the overlay image was lined up using a width modifier of 97.5%, which looks great on most displays. On small displays however, the an overhang of the main image persists, which isn't remedied by the overflow CSS option.
-
-  Additional media query options have been looked into and additional breakpoints have had new width percentages added to try to cater to all audiences.
-
-- Styling was added via html on the EmailJS template which successfully appeared on the site preview. This styling did not appear in the final email however, hence the plain styling of the email that is received by the customer. Future emails would ideally be on-brand to give end-user consistency.
-EmailJS documentation states that HMTL/CSS styling is supported however do not seem to have any FAQs offering assistance with this.
-
-- The CSS Validator flags up an aspect of the footer (margin-top: 16px 0;). This is margin-collapse CSS which means that there is no excess grey bar above the footer, which is the preferred styling. According to W3 Schools, this is valid CSS: https://www.w3schools.com/cssref/pr_margin-top.asp 
-The W3C validation service however flags this as an error.
-
-## Attribution
-
-- Site background image: 
-  https://www.pexels.com/photo/grey-abstract-wallpaper-3137052/
-
-- Main sofa image by CAMACHO03:
-  https://pixabay.com/photos/sofa-orange-cushion-furniture-5213406/
-
-- Footer details adopted from 'Another simple footer' by toama:
-  https://codepen.io/toamaenepitin/pen/gObvrxd
-
-
-- JQuery assistance from StackOverflow:
-  https://stackoverflow.com/questions/12631746/change-css-based-on-drop-down-selections-value-using-jquery
-
-  https://stackoverflow.com/questions/10412103/populate-form-with-localstorage
-
-- Assistance with price calculations: 
-  https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
-
-- Assistance with Date.now to generate unique IDs:
-  https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13
-
-- Assistance with the CSS filter used to generate the image colours:  https://css-tricks.com/almanac/properties/f/filter/
-
-- Assistance with scrolling behaviour:
-  https://stackoverflow.com/questions/45599455/change-logo-on-scroll-bootstrap-3
-
-- Assistance with pushing content out of the way of the dropdown:
-  https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
-
-- Removal of the main image background:
-  https://www.remove.bg 
-
-- Generation of the site favicon utilised:
-  https://realfavicongenerator.net
-
 
 ## Testing
 
 ### Validation service
-- As mentioned in 'Known Issues', the CSS validator picks up a margin-collapse CSS as an error, despite it being supported CSS. It has been left and flagged here just in case as it is essential for the desired styling of the footer.
 
-- The HTML validator picked up several errors - missing alt attributes on the main image and it's overlay along with contrasting id and label names on the quote box. These were all remedied successfully.
+#### HTML
+The HTML validator picked up several errors including: 
+- Missing alt attributes on the main image - this was added.
+- Missing alt attributes on the main image overlay - this was also added.
+- Contrasting id and label names on the quote box and it's overlay - the names were amended to match, removing the error.
+- A warning regarding a missing header in the 'quote' section - the section was moved to incorporate the existing header which was outside of it at time of checking.
+- The console flagged up a missing favicon (showing a 404 error - not found) - the favicon was generated and added to the site.
 
-- As advised on the Assessment handbook, the JavaScript on this project was run through JShint. It picked up a missing semicolon, which was rectified. In addition it states that in three cases there are additional semi-colons (as a warning, not an error) but they were left as they are present in the guidance notes.
+The takeaway from these points is that greater care and attention should be taken to ensure appropriate tagging on images is done at the time of addition. This minimises the need to rely on validators to pick up any erroneous code.
 
+The HTML Validator is now shown to pass.
+
+
+#### CSS
+- As mentioned in 'Known Issues', the CSS validator picks up a margin-collapse CSS as an error.
+  This was remedied by a mentor discussion and careful reading of the documentation where margin controls are less than clear on face value. 
+- Bootstraps' built-in CSS is flagged as having several errors on the validator. 
+  The course guidelines identify this also and it can be safely ignored. Copy and pasting the sites custom CSS does not show these errors therefore can be deemed correct.
+
+
+The learning exercise here is to ensure that the documentation is thoroughly observed, along with using the browser inspector to amend css values - namely margins in this case - to find an appropriate solution without affecting the base code.
+
+The CSS validator is now shown to pass.
+
+
+
+#### JavaScript
+As advised on the Assessment handbook, the JavaScript on this project was run through JShint. 
+
+- A missing semicolon was picked up in pricecalculator.js - this was added.
+- Three additional semicolons were identified - these were removed and the code checked to ensure continued functionality.
+- Several variables were classed as undefined, but this was due to the HTML not being accessed by the validator and the '$' symbol used by JQuery not being recognised as belonging to JQuery.
+
+These can be seen here:
+
+![JS01](https://user-images.githubusercontent.com/61311614/96256513-ba593000-0fb0-11eb-867e-6f576e6d9e7d.png)
+
+Future coding exercises would be well-served by using this exercise to ensure correct semicolon use. The code was still functional, but not completely correct therefore using this service is an excellent method of ensuring correct syntax. 
+
+The JShint validaor is now shown to pass (except the undefined variables, which as above are expected.)
+
+![JS02](https://user-images.githubusercontent.com/61311614/96256565-cd6c0000-0fb0-11eb-802f-51eaf15ae3b1.png)
+
+#### Wave(WebAIM) validator
+
+Although this isn't a necessary step, I found in my previous project that a user-experience validator, both for screenreaders and users who are partially sighted, is very useful.
+
+As we are making websites that aim to be used by the largest audience possible, I like to add this as an additional check.
+
+The following website was used to assess compatibility with screenreaders
+https://wave.webaim.org/
+
+It located the following:
+
+- Errors - Empty button found, but this is just the three bar dropdown for responsive behaviour
+
+- Contrast Errors - These have been located on the colour choice buttons, however they have been specifically chosen to reflect the colours of the background.
+
+  User Experience is deemed to be more important however so using the wave validator, darker colours were chosen and implemented so that the buttons passed AA rating for normal text. AAA was deemed to be so dark that the colour wasn't recognisable - defeating the point in my opinion so AA rating was settled on.
+
+  As in my previous project, the other contrast errors are in the bootstrap standard buttons, which do not pass validation. It was recommended that I restyle these so that they do pass this time, which has now been done.
+
+The process can be seen below, where the elements are highlighted and using a drag bar, the colours are seen to either pass or fail the 'AA' or 'AAA' ratings:
+
+Before (Blaze Red):
+
+![WA01](https://user-images.githubusercontent.com/61311614/96256268-40c14200-0fb0-11eb-8992-7ea45de978bc.png)
+
+After (Blaze Red):
+
+![WA02](https://user-images.githubusercontent.com/61311614/96256282-461e8c80-0fb0-11eb-8eaa-d53d19e0d837.png)
+
+The other highlights of the validator were positive, such as aria usage and header/footer tags.
 
 
 ### Page links
@@ -255,24 +256,6 @@ iPhone 6/7/8 Plus
 iPhone X/XS
 Kindle Fire HDX
 
-### UX and screenreader compatibility
-
-The following website was used to assess compatibility with screenreaders
-https://wave.webaim.org/ 
-
-
-#### Initial findings and improvements
-
-Errors - Empty button found, but these is just the three bar dropdown for responsive behaviour
-
-Contrast Errors - These have been located on the colour choice buttons, however they have been specifically chosen to reflect the colours of the background.
-
-User Experience is deemed to be more important however so using the wave validator, darker colours were chosen and implemented so that the buttons passed AA rating for normal text.
-
-As in my previous project, the other contrast errors are in the bootstrap standard buttons, which do not pass validation. It was recommended that I restyle these so that they do pass this time, which has now been done.
-
-The other highlights of the validator were positive, such as aria usage and header/footer tags.
-
 
 ### Browsers
 
@@ -288,13 +271,51 @@ It was observed that the Github pages version of the website took 10-15 minutes 
 Aside from that, the final Github version matches the development version that is hosted on Repl.it.
 
 
-### W3C and Jigsaw validation
+## Known issues
 
-The validators picked up on the issue mentioned above, that the margin settings on the footer were incorrect despite documentation stating that this is an appropriate use case. 
+- Due to the recommendation that the main image was changed - a transparent background over the original image as it changes - a small issue has been generated.
 
-Additionally some warnings were generated, including use of an aria label which was a misunderstood addition from the Firefox accessibility flags. Also the suggestion of a heading tag on one of the sections, which is not relevant as the form does not need a header by design.
+  Despite the images being the same exact size, they do not line up perfectly. Through various browser inspector trials, it the overlay image was lined up using a width modifier of 97.5%, which looks great on most displays. On small displays however, the an overhang of the main image persists, which isn't remedied by the overflow CSS option.
 
-It was also identified that the Jigsaw validator has serious issues with much of the bootstrap built-in CSS. It was instead validated by input, instead of via URL and the remainder of the CSS was rated to pass.
+  Additional media query options have been looked into and additional breakpoints have had new width percentages added to try to cater to all audiences.
+
+- Styling was added via html on the EmailJS template which successfully appeared on the site preview. This styling did not appear in the final email however, hence the plain styling of the email that is received by the customer. Future emails would ideally be on-brand to give end-user consistency.
+EmailJS documentation states that HMTL/CSS styling is supported however do not seem to have any FAQs offering assistance with this.
+
+- The CSS Validator flags up an aspect of the footer (margin-top: 16px 0;). This is margin-collapse CSS which means that there is no excess grey bar above the footer, which is the preferred styling. According to W3 Schools, this is valid CSS: https://www.w3schools.com/cssref/pr_margin-top.asp 
+The W3C validation service however flags this as an error.
+
+  Through a mentor conversation, this was remedied by more thorough document analysis, and some well-timed advice on the usage of browser inspection tools. The issue has now been fixed but the documentation left here to show the learning element of the scenario.
+
+
+## Future improvements
+
+- As mentioned above, one of the main improvements to the user experience would be a better template for the quote email.
+  With CSS styling successfully added to this it would round out the user experience, keeping all communication from the site consistent and on-brand.
+
+- A final mentor conversation identified that the useage of the built-in JavaScript 'alert()' functions are functional, but not utilised as much in modern websites any more.
+  It was advised that going forward, should user information be needed to be presented, to use custom modals like has been used for my contact information. This would be cleaner and again make a more rounded user experience.
+
+- Additional images added, perhaps in a side-scrolling fashion would more actively engage the user. 
+  This was not carried out at this time due to the hue-values being troublesome to match across images with a different starting colour. 
+  If image colours were edited to match then this would be one way forward, or actual photos taken by the site designer so that all images start from a similar baseline would be another.
+  Should the PaintPeruser business be a real one, actual colours would exist though and would be significantly easier to select between.
+
+
+## Deployment Procedure
+- Github pages utilised for deployment - process as follows: 
+- Navigate to https://github.com/WrightDanG/PaintPeruser/ -Settings, scroll down to Github pages -Select the master branch, root directory and click deploy. -Site is hosted at https://wrightdang.github.io/PaintPeruser/
+
+On the first navigation, a 404 error was presented. Manually navigating to https://wrightdang.github.io/PaintPeruser/index.html resolved this and the website remained stable after that.
+
+In addition, on first hosting the main image was non-functional and the JavaScript was not successfully connected.
+
+This was remedied by amending the file structure in the project - while repl.it could utilise the '../assets/....' structure taught in the course, GitHub Pages could not. 
+As such this was amended to 'assets/....' which fixed the issue.
+
+
+Code was locally viewed and edited via repl.it.
+
 
 ## User story walkthroughs
 
@@ -361,4 +382,43 @@ If they would have saved their details on the previous visit however, on page lo
 ## Conclusion
 
 In my opinion, the journey satisfies the proposed user story expectations listed at the beginning of the readme. The user is able to modify the site to visualise their paint choices and follow up, bringing value to the proposed business. 
+
+
+## Attribution
+
+- Site background image: 
+  https://www.pexels.com/photo/grey-abstract-wallpaper-3137052/
+
+- Main sofa image by CAMACHO03:
+  https://pixabay.com/photos/sofa-orange-cushion-furniture-5213406/
+
+- Footer details adopted from 'Another simple footer' by toama:
+  https://codepen.io/toamaenepitin/pen/gObvrxd
+
+
+- JQuery assistance from StackOverflow:
+  https://stackoverflow.com/questions/12631746/change-css-based-on-drop-down-selections-value-using-jquery
+
+  https://stackoverflow.com/questions/10412103/populate-form-with-localstorage
+
+- Assistance with price calculations: 
+  https://www.sitepoint.com/community/t/simple-price-calculator/7919/2
+
+- Assistance with Date.now to generate unique IDs:
+  https://dev.to/rahmanfadhil/how-to-generate-unique-id-in-javascript-1b13
+
+- Assistance with the CSS filter used to generate the image colours:  https://css-tricks.com/almanac/properties/f/filter/
+
+- Assistance with scrolling behaviour:
+  https://stackoverflow.com/questions/45599455/change-logo-on-scroll-bootstrap-3
+
+- Assistance with pushing content out of the way of the dropdown:
+  https://stackoverflow.com/questions/22564817/bootstrap-collapsed-menu-not-pushing-content-down-when-expanded
+
+- Removal of the main image background:
+  https://www.remove.bg 
+
+- Generation of the site favicon utilised:
+  https://realfavicongenerator.net
+
 

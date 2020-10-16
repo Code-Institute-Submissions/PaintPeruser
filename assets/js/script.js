@@ -43,7 +43,7 @@ $('#pick-me-btn').on('click', function() {
   case "calming-teal": current_choice = "Calming Teal";
   break;
   default: current_choice = "Error";
-  };
+  }
   $('#dropdown-calculator').val(current_choice);
   console.log(current_choice);
   calculatePrice();

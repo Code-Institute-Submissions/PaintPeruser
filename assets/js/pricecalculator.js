@@ -34,8 +34,8 @@ function generateID() {
   if ($("#quoteBox").val() == "") {
     var id = Date.now();
     $("#quoteBox").val(id);
-  };
-};
+  }
+}
 
 
 

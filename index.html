@@ -117,68 +117,70 @@
         <button type="button" id="pick-me-btn" class="btn btn-primary">Choose this colour</button>
       </div>
     </section>
-    <div>
-        <h3 class="colour-pick-text">Get your quote.</h3>
-      </div>
-    <hr class="block-divider block-divider-bottom-margin">
-    <!--Quote box, capturing user details and linked primarily to emailer.js. Others too, listed below. -->
-    <section class="form-container">
-      <div id="email-form" class="card bg-transparent text-center border-dark">
-      <form onsubmit="return sendMail(this);">
-        <div class="form-row">
-          <div class="form-group col-md-3">
-            <label for="fname">First Name</label>
-            <input name="fname" type="text" class="form-control" id="fname" placeholder="First Name" required>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="lname">Last Name</label>
-            <input name="lname" type="text" class="form-control" id="lname" placeholder="Last Name" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="emailaddress">Email</label>
-            <input name="emailaddress" type="email" class="form-control" id="emailaddress" placeholder="Email" required>
-          </div>
+    <section>
+      <div>
+          <h3 class="colour-pick-text">Get your quote.</h3>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-3">
-            <!--Linked to the 'Pick this colour' button above, but also can be controlled as a dropdown. -->
-            <label for="dropdown-calculator">Colour Choice</label>
-            <select class="custom-select" id="dropdown-calculator" name="choose_colour_two" required aria-label="choose-colour">
-              <option selected disabled value="">Choose a colour</option>
-              <option value="Blaze Red">Blaze Red</option>
-              <option  value="Azure Blue">Azure Blue</option>
-              <option  value="Jewel Green">Jewel Green</option>
-              <option  value="Passion Purple">Passion Purple</option>
-              <option  value="Vivid Pink">Vivid Pink</option>
-              <option  value="Sunburnt Orange">Sunburnt Orange</option>
-              <option  value="Calming Teal">Calming Teal</option>
-            </select>
+      <hr class="block-divider block-divider-bottom-margin">
+      <!--Quote box, capturing user details and linked primarily to emailer.js. Others too, listed below. -->
+      <div class="form-container">
+        <div id="email-form" class="card bg-transparent text-center border-dark">
+        <form onsubmit="return sendMail(this);">
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="fname">First Name</label>
+              <input name="fname" type="text" class="form-control" id="fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="lname">Last Name</label>
+              <input name="lname" type="text" class="form-control" id="lname" placeholder="Last Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="emailaddress">Email</label>
+              <input name="emailaddress" type="email" class="form-control" id="emailaddress" placeholder="Email" required>
+            </div>
           </div>
-          <!--Square Footage and Price are used/generated with the colour price modifier in pricecalculator.js -->
-          <div class="form-group col-md-3">
-            <label for="square-feet">Square Footage Required</label>
-            <input name="square_feet" type="text" class="form-control" id="square-feet" placeholder="Square Feet" required>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <!--Linked to the 'Pick this colour' button above, but also can be controlled as a dropdown. -->
+              <label for="dropdown-calculator">Colour Choice</label>
+              <select class="custom-select" id="dropdown-calculator" name="choose_colour_two" required aria-label="choose-colour">
+                <option selected disabled value="">Choose a colour</option>
+                <option value="Blaze Red">Blaze Red</option>
+                <option  value="Azure Blue">Azure Blue</option>
+                <option  value="Jewel Green">Jewel Green</option>
+                <option  value="Passion Purple">Passion Purple</option>
+                <option  value="Vivid Pink">Vivid Pink</option>
+                <option  value="Sunburnt Orange">Sunburnt Orange</option>
+                <option  value="Calming Teal">Calming Teal</option>
+              </select>
+            </div>
+            <!--Square Footage and Price are used/generated with the colour price modifier in pricecalculator.js -->
+            <div class="form-group col-md-3">
+              <label for="square-feet">Square Footage Required</label>
+              <input name="square_feet" type="text" class="form-control" id="square-feet" placeholder="Square Feet" required>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="priceBox">Price</label>
+              <input name="price" type="text" class="form-control" id="priceBox" placeholder="Price" disabled>
+            </div>
+            <!--Quote number also generated by pricecalculator.js. It utilises the current date and time to generate a unique number -->
+            <div class="form-group col-md-3">
+              <label for="quoteBox">Quote Number</label>
+              <input name="quote" type="text" class="form-control" id="quoteBox" placeholder="N/A" disabled>
+            </div>
           </div>
-          <div class="form-group col-md-3">
-            <label for="priceBox">Price</label>
-            <input name="price" type="text" class="form-control" id="priceBox" placeholder="Price" disabled>
+          <div class="form-group">
+            <!--Save and reset details controlled in savedetails.js. Both functions edit the local storage in the users browser, saving choices as key:value pairs. -->
+            <div>
+              <button onclick="saveDetails()" type="button" class="btn btn-success">Save these details</button>
+              <button onclick="resetDetails()" type="button" class="btn btn-success">Reset these details</button>
+            </div>
           </div>
-          <!--Quote number also generated by pricecalculator.js. It utilises the current date and time to generate a unique number -->
-          <div class="form-group col-md-3">
-            <label for="quoteBox">Quote Number</label>
-            <input name="quote" type="text" class="form-control" id="quoteBox" placeholder="N/A" disabled>
-          </div>
+          <!--Submit button linked to emailer.js -->
+          <button type="submit" class="btn btn-primary">Send Quote</button>
+        </form>
         </div>
-        <div class="form-group">
-          <!--Save and reset details controlled in savedetails.js. Both functions edit the local storage in the users browser, saving choices as key:value pairs. -->
-          <div>
-            <button onclick="saveDetails()" type="button" class="btn btn-success">Save these details</button>
-            <button onclick="resetDetails()" type="button" class="btn btn-success">Reset these details</button>
-          </div>
-        </div>
-        <!--Submit button linked to emailer.js -->
-        <button type="submit" class="btn btn-primary">Send Quote</button>
-      </form>
       </div>
     </section>
     <!--Modal popup for contact details - email and phone number -->

@@ -38,8 +38,8 @@ function resetDetails() {
 
     console.log("Local Storage Cleared");
     alert("Your details have been reset.");
-  };
-};
+  }
+}
 
 /*This function grabs existing stored values and loads them into the appropriate form boxes on page load - for return customers. */
 $(document).ready(function() {
