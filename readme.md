@@ -121,6 +121,7 @@ The takeaway from these points is that greater care and attention should be take
 
 The HTML Validator is now shown to pass.
 
+![W302](https://user-images.githubusercontent.com/61311614/96258068-5f750800-0fb3-11eb-90b8-a41abbd4ed1c.png)
 
 #### CSS
 - As mentioned in 'Known Issues', the CSS validator picks up a margin-collapse CSS as an error.
@@ -133,7 +134,7 @@ The learning exercise here is to ensure that the documentation is thoroughly obs
 
 The CSS validator is now shown to pass.
 
-
+![W301](https://user-images.githubusercontent.com/61311614/96258063-5dab4480-0fb3-11eb-8e14-6dc01183f5ec.png)
 
 #### JavaScript
 As advised on the Assessment handbook, the JavaScript on this project was run through JShint. 
@@ -378,6 +379,12 @@ A return user would have much the same journey in that they can take a look at t
 
 If they would have saved their details on the previous visit however, on page load they would scroll down to find them already there. They would be able to easily resend their last quote if they wished to or delete those details and make new ones. 
 
+This can be seen if we look at their local storage, where their saved selection is stored as key:value pairs. On page load, they are accessed and pre-loaded for them, as seen below:
+
+![PP13](https://user-images.githubusercontent.com/61311614/96258852-8ed84480-0fb4-11eb-910f-cfad15fcbb51.png)
+
+The objective is making future enquiries for them as easy and hassle-free as possible.
+
 
 ## Conclusion
 
@@ -420,5 +427,8 @@ In my opinion, the journey satisfies the proposed user story expectations listed
 
 - Generation of the site favicon utilised:
   https://realfavicongenerator.net
+
+
+Final thanks goes to Can Sucullu - who's sage mentor advice is constantly making me a better developer, or at least trying to.
 
 
