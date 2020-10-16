@@ -102,6 +102,7 @@ Mobile
 - GitHub Pages - an aspect of Github, used to deploy the finalised product.
 - Figma - used to create wireframe ideas of how the website should look and function. Used as an alternative to Balsamiq to get a feel for other programs
 - Replace.bg - utilised to remove the background from the main site image for the colour overlay.
+- realfavicongenerator.net - used to correctly generate site favicon
 
 ## Deployment Procedure
 - Github pages utilised for deployment - process as follows: 
@@ -166,6 +167,9 @@ The W3C validation service however flags this as an error.
 
 - Removal of the main image background:
   https://www.remove.bg 
+
+- Generation of the site favicon utilised:
+  https://realfavicongenerator.net
 
 
 ## Testing
