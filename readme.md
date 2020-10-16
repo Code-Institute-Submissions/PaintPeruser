@@ -102,7 +102,7 @@ Mobile
 - GitHub Pages - an aspect of Github, used to deploy the finalised product.
 - Figma - used to create wireframe ideas of how the website should look and function. Used as an alternative to Balsamiq to get a feel for other programs
 - Replace.bg - utilised to remove the background from the main site image for the colour overlay.
-- realfavicongenerator.net - used to correctly generate site favicon
+- Realfavicongenerator.net - used to correctly generate site favicon
 
 
 ## Testing
@@ -164,7 +164,7 @@ https://wave.webaim.org/
 
 It located the following:
 
-- Errors - Empty button found, but this is just the three bar dropdown for responsive behaviour
+- Errors - Empty button found, but this is just the three bar dropdown for responsive behaviour.
 
 - Contrast Errors - These have been located on the colour choice buttons, however they have been specifically chosen to reflect the colours of the background.
 
@@ -183,6 +183,26 @@ After (Blaze Red):
 ![WA02](https://user-images.githubusercontent.com/61311614/96256282-461e8c80-0fb0-11eb-8eaa-d53d19e0d837.png)
 
 The other highlights of the validator were positive, such as aria usage and header/footer tags.
+
+#### Internal custom validation
+
+After a mentor meeting, it was suggested that the form elements could have additional validation added. Currently, bootstrap's built in validation methods are sufficient, meaning that making the fields 'required' ensures input before the EmailJS functionality is invoked.
+
+It was pointed out however that for my own learning, it would be a good exercise to replicate this validation via JavaScript. This is especially true as the 'required' marker does not function correctly on IE9 and below.
+
+As such, I have added the JavaScript to emailer.js, assisted by the following websites:
+https://www.w3schools.com/js/js_validation.asp
+https://stackoverflow.com/questions/11806253/onsubmit-multiple-javascript-functions
+
+The latter website was used when the validate function needed to be passed to the onsubmit aspect of the form, before moving onto the sendMail function if complete.
+
+So for users on IE9 and below, or anyone who wishes to check, if the required tags are removed from the form elements, an alert will prompt the user to add the missing form aspects before allowing an email to be sent.
+
+The prompt appears as below (this image is specifically last name, but the messages are bespoke for each field:
+
+![lname01](https://user-images.githubusercontent.com/61311614/96267638-f5169480-0fbf-11eb-8a28-88f777fa4f5d.png)
+
+
 
 
 ### Page links
@@ -256,6 +276,35 @@ iPhone 6/7/8
 iPhone 6/7/8 Plus
 iPhone X/XS
 Kindle Fire HDX
+
+### JavaScript tests
+
+#### emailer.js: 
+- When 'required' tags are removed, the validateForm function should flag any empty fields before submitting the form - confirmed for each field, with bespoke messages.
+  
+- When all fields are filled out, sendMail function should push form values to emailJS, prompt an email to be sent to the provided address and log success or failure to the console and user - confirmed.
+
+#### pricecalculator.js:
+- getColour function should iterate through colour options to located selected provide a value to calculatePrice - confirmed
+  
+- calculatePrice function should take the colour value, base price (of £25) and the selected square footage and generate a price in '£' for the user - confirmed.
+
+- generateID should use the current date and time to generate a custom quote number for the order - confirmed.
+
+#### saveDetails.js:
+- saveDetails function is expected to set the current field selections as key:value pairs in the user's browser local storage - confirmed.
+
+- resetDetails should clear any pairs that have been saved by the saveDetails function, after user confirmation on popup alert - confirmed.
+
+- On document load, should any key:value pairs exist, they should automatically load into their respective fields via the JQuery document.ready function - confirmed.
+
+#### script.js:
+- Once the document is ready, script.js should allow users to click one of the colour buttons and have that colour load a CSS class onto the main image, whilst removing any conflicting classes - confirmed.
+
+- The 'pick-me-btn' code should allow the user to use the 'Pick this colour' button to move their existing colour choice down into the colour dropdown box for the quote - confirmed.
+
+#### scroller.js:
+- When the window is scrolled down, scroller.js should change the logo to it's single letter equivalient, collapse the navigation menu to the three bar icon and make the navbar translucent instead of transparent - confirmed.
 
 
 ### Browsers
@@ -428,6 +477,9 @@ In my opinion, the journey satisfies the proposed user story expectations listed
 - Generation of the site favicon utilised:
   https://realfavicongenerator.net
 
+- Assistance with validation JavaScript code:
+  https://www.w3schools.com/js/js_validation.asp
+  https://stackoverflow.com/questions/11806253/onsubmit-multiple-javascript-functions
 
 Final thanks goes to Can Sucullu - who's sage mentor advice is constantly making me a better developer, or at least trying to.
 

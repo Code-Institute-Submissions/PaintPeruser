@@ -125,7 +125,7 @@
       <!--Quote box, capturing user details and linked primarily to emailer.js. Others too, listed below. -->
       <div class="form-container">
         <div id="email-form" class="card bg-transparent text-center border-dark">
-        <form onsubmit="return sendMail(this);">
+        <form name="email-form" onsubmit="return !!(validateForm() && sendMail(this) );">
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="fname">First Name</label>
